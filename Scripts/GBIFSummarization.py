@@ -58,37 +58,50 @@ Created on Wed Dec 19 15:10:15 2018
 """
 
 # Import modules
-import pygbif, pandas as pd
+import pandas as pd
 from pygbif import occurrences as occ
 from pygbif import species
-
+from datetime import datetime
+import sys
+sys.path.append('C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/')
+import config
 # Local variables
-tempDir = 'C:/Data/USGS Analyses/ModelAssessment/temp/'
+workDir = 'C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/'
+tempDir = workDir + 'temp/'
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #   Species list - start with it static 
 #   then move toward a more robust, dynamic method - ScienceBase?
 
-#sppList = ['Plethodon chlorobryonis','Desmognathus quadramaculatus']
-sppList = ['Plethodon chlorobryonis','Desmognathus quadramaculatus','Pseudacris brimleyi',
-'Taricha torosa','Hyla chrysoscelis','Plethodon idahoensis','Ambystoma californiense'
-,'Lithobates areolatus','Notophthalmus viridescens','Ensatina eschscholtzii',
-'Rana boylii','Anaxyrus cognatus','Ambystoma talpoideum','Spea bombifrons',
-'Hyla squirella','Strix varia','Mniotilta varia','Poecile atricapillus','Thryomanes bewickii',
-'Polioptila caerulea','Catharus bicknelli','Dolichonyx oryzivorus','Psaltriparus minimus',
-'Polioptila californica','Catherpes mexicanus','Nucifraga columbiana','Uria aalge',
-'Zonotrichia leucophrys','Parabuteo unicinctus','Mergus serrator','Archilochus colubris',
-'Piranga olivacea','Sphyrapicus thyroideus','Microtus californicus',
-'Pecari tajacu','Tamiasciurus douglasii','Martes pennanti','Mustela nivalis',
-'Tamias speciosus','Alces americanus','Geomys bursarius','Arborimus longicaudus',
-'Glaucomys volans','Sorex fumeus','Thomomys mazama','Thamnophis sauritus',
-'Kinosternon subrubrum','Senticolis triaspis','Plestiodon egregius','Chrysemys picta',
-'Aspidoscelis xanthonota','Nerodia clarkii','Thamnophis elegans','Pseudemys texana',
-'Sceloporus jarrovii']
+sppList = config.LessThan30000
+#sppList = ['Onychoprion anaethetus']
+#sppList = ['Plethodon chlorobryonis','Desmognathus quadramaculatus','Pseudacris brimleyi',
+#'Taricha torosa','Hyla chrysoscelis','Plethodon idahoensis','Ambystoma californiense'
+#,'Lithobates areolatus','Notophthalmus viridescens','Ensatina eschscholtzii',
+#'Rana boylii','Anaxyrus cognatus','Ambystoma talpoideum','Spea bombifrons',
+#'Hyla squirella','Strix varia','Mniotilta varia','Poecile atricapillus','Thryomanes bewickii',
+#'Polioptila caerulea','Catharus bicknelli','Dolichonyx oryzivorus','Psaltriparus minimus',
+#'Polioptila californica','Catherpes mexicanus','Nucifraga columbiana','Uria aalge',
+#'Zonotrichia leucophrys','Parabuteo unicinctus','Mergus serrator','Archilochus colubris',
+#'Piranga olivacea','Sphyrapicus thyroideus','Microtus californicus',
+#'Pecari tajacu','Tamiasciurus douglasii','Martes pennanti','Mustela nivalis',
+#'Tamias speciosus','Alces americanus','Geomys bursarius','Arborimus longicaudus',
+#'Glaucomys volans','Sorex fumeus','Thomomys mazama','Thamnophis sauritus',
+#'Kinosternon subrubrum','Senticolis triaspis','Plestiodon egregius','Chrysemys picta',
+#'Aspidoscelis xanthonota','Nerodia clarkii','Thamnophis elegans','Pseudemys texana',
+#'Sceloporus jarrovii']
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+'''
+    Function to write an error log if a species' occurrence records
+    server connection cannot be made - i.e. a 5xx number error.
+'''
+log = workDir + 'Species-Data-Access-Error-Log.txt'
+def Log(content):
+    with open(log, 'a') as logDoc:
+        logDoc.write(content + '\n')
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '''
@@ -99,11 +112,12 @@ def SummaryInfo(sp, dframe):
     '''
     The dataframe returned by this function generates summary info
     into the following columns:
-      SppName:        Species scientific name       
+      SppName:        Species scientific name
       nRecords:       Number of records for species in US with coordinates
       nCoordUncty:    Number of records with values for coordinate uncertainty
       minCoordUncty:  Lowest coordinate uncertainty
       maxCoordUncty:  Highest coordinate uncertainty
+      RecordBasis:	Type/method of record collection such as 'human observation' or 'preserved specimen'
       nTextDesc:      Number of times textual location information was entered for any occurrence
       nGeoDatum:      Number of records listing geodetic datum
       nMonth:         Number of records listing a collection month
@@ -122,7 +136,7 @@ def SummaryInfo(sp, dframe):
     # Make an empty list and set column names
     reclst = []
     lstcols = ['SppName','nRecords','nCoordUncty','minCoordUncty','maxCoordUncty',
-               'nTextDesc',
+               'RecordBasis','nTextDesc',
                'nGeoDatum','nMonth','nYear',
                'nSciNameRecs','nComNameRecs','ComNames',
                'TaxRanks','TaxStatuses']
@@ -136,6 +150,11 @@ def SummaryInfo(sp, dframe):
     minCoUn = dframe['coordinateUncertaintyInMeters'].min()
     maxCoUn = dframe['coordinateUncertaintyInMeters'].max()
     
+    lstRBUnique = dframe['basisOfRecord'].drop_duplicates()
+    lstRB = list(lstRBUnique)
+    # remove NaNs from the list
+    lstRcBs = [el for el in lstRB if str(el) != 'nan']
+        
     # Get the number of times textual location information was entered for any occurrence
     cntText = dframe['eventRemarks'].count() + \
               dframe['locality'].count() + \
@@ -177,7 +196,8 @@ def SummaryInfo(sp, dframe):
     
 
     # Append all the data into the empty list with column names
-    reclst.append([sp,cntRecs,cntCoUn,minCoUn,maxCoUn,cntText,
+    reclst.append([sp,cntRecs,cntCoUn,minCoUn,maxCoUn,
+                   lstRcBs,cntText,
                    cntGeDa,cntMnth,cntYear,
                    cntScNm,cntCoNm,lstCoNm,
                    lstTxRn,lstTxSt])
@@ -187,35 +207,29 @@ def SummaryInfo(sp, dframe):
     return dfSummTable
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-# Make an empty master dataframe to append each species' records
-dfMaster = pd.DataFrame()
-# Make an empty species info master dataframe to append each species' records summary
-dfSppInfoMaster = pd.DataFrame()
-
-
-
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 '''
-    NOTE: Not all species have all required fields in their set of records.
-          To avoid an error when combining species data, create a dictionary
-          with the required fields and no data, making it into a dataframe.
-          Then its possible to append this empty dataframe with all the data
-          for a given species regardless of whether that field exists for that
-          species. Subsequently, this dataframe can be thinned back to the required
-          fields and reordered. Finally, it can appended to the master dataframe.
+    Function to assemble GBIF occurrences for a given species
 '''
-# Make an empty dataframe with required field names using an empty dictionary
-data0 = {'species':[],'vernacularName':[],
-         'decimalLatitude':[],'decimalLongitude':[],
-        'coordinateUncertaintyInMeters':[],'geodeticDatum':[],
-        'eventRemarks':[],'locality':[],'locationRemarks':[],'occurrenceRemarks':[],
-        'stateProvince':[],'year':[],'month':[],
-        'basisOfRecord':[],'taxonRank':[],'taxonomicStatus':[]}
-df0 = pd.DataFrame(data=data0, index=None)
-
-# Loop over each species in the species list
-for spp in sppList:
+def GetGBIF(spp):
+    
+    '''
+        NOTE: Not all species have all required fields in their set of records.
+              To avoid an error when combining species data, create a dictionary
+              with the required fields and no data, making it into a dataframe.
+              Then its possible to append this empty dataframe with all the data
+              for a given species regardless of whether that field exists for that
+              species. Subsequently, this dataframe can be thinned back to the required
+              fields and reordered. Finally, it can appended to a master dataframe.
+    '''
+    # Make an empty dataframe with required field names using an empty dictionary
+    data0 = {'species':[],'vernacularName':[],
+             'decimalLatitude':[],'decimalLongitude':[],
+            'coordinateUncertaintyInMeters':[],'geodeticDatum':[],
+            'eventRemarks':[],'locality':[],'locationRemarks':[],'occurrenceRemarks':[],
+            'stateProvince':[],'year':[],'month':[],
+            'basisOfRecord':[],'taxonRank':[],'taxonomicStatus':[]}
+    df0 = pd.DataFrame(data=data0, index=None)
     
     print('Working on the following species:', spp)
     # Make an empty list to store data iterations
@@ -229,11 +243,18 @@ for spp in sppList:
         # Gather the occurrences dictionary using the appropriate criteria
         recs = occ.search(scientificName = spp, 
                            hasCoordinate=True,
-                           country='US', 
+                           country='US',
                            geoSpatialIssue=False,
-                           offset=n)
-        cnt = recs['count']
-        print('  This species has', cnt, 'records')
+                           offset=n) #geoSpatialIssue=False
+        # Not all species have COUNT in their occurrence record dictionary
+        # !!!!!!!!! WHAT THE FUCK GBIF !!!!!!!!!!!!!!!
+        # If it does, print the count, otherwise print UNKNOWN RECORD COUNT
+        if 'count' in recs:
+            cnt = recs['count']
+            print('  This species has', cnt, 'records')
+        else:
+            #cnt = 0.9
+            print('  This species has an UNKNOWN RECORD COUNT')
         eor = recs['endOfRecords']
         tablelst = tablelst + recs['results']
         n+=300
@@ -249,27 +270,55 @@ for spp in sppList:
         'eventRemarks','locality','locationRemarks','occurrenceRemarks',
         'stateProvince','year','month',
         'basisOfRecord','taxonRank','taxonomicStatus']]
-    
-    # Now append this thinned dataframe to the master
-    dfMaster = dfMaster.append(dfThinned, ignore_index=True, sort=False)
-    
-    # -------------------------------------------------------------
-    # Call the SummaryInfo function to assemble some stats on 
-    # GBIF records for each of the assessed species
-    dfSppInfo = SummaryInfo(spp, dfThinned)
-    # Append this to the master species info dataframe
-    dfSppInfoMaster = dfSppInfoMaster.append(dfSppInfo, ignore_index=True, sort=False)
-    # -------------------------------------------------------------
+    return dfThinned
 
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+beginTime = datetime.now()
+print("*"*40); print('Began ' + str(beginTime)); print("*"*40)
+
+# Make an empty master dataframe to append each species' records
+dfSppRecsMaster = pd.DataFrame()
+# Make an empty species info master dataframe to append each species' records summary
+dfSppInfoMaster = pd.DataFrame()
+
+# Loop over each species in the species list
+for sp in sppList:
+    
     print('\n')
+
+    try:
+        # -------------------------------------------------------------
+        # Call the GetGBIF function for each species to return a
+        # dataframe of occurrences with the pared down number of columns
+        dfSppRecs = GetGBIF(sp)
+        # Now append this thinned dataframe to the master
+        #dfSppRecsMaster = dfSppRecsMaster.append(dfSppRecs, ignore_index=True, sort=False)
+
+
+        # -------------------------------------------------------------
+        # Call the SummaryInfo function to assemble some stats on 
+        # GBIF records for each of the assessed species
+        dfSppInfo = SummaryInfo(sp, dfSppRecs)
+        # Append this to the master species info dataframe
+        dfSppInfoMaster = dfSppInfoMaster.append(dfSppInfo, ignore_index=True, sort=False)
+        # -------------------------------------------------------------
+    except:
+        print('   Had problems connecting to GBIF.\n\
+           Writing species name to error log and moving to next species...')
+        Log(sp)
+        
 
 
 # Export to CSV
-#dfMaster.to_csv(tempDir + "SpeciesOccurrences-GBIF.csv")
-dfSppInfoMaster.to_csv(tempDir + "Species GBIF Summary Stats.csv")
+#dfSppRecsMaster.to_csv(tempDir + "SpeciesOccurrences-GBIF.csv")
+#dfAppended.to_csv(tempDir + "{0}-GBIF.csv".format(spp))
+dfSppInfoMaster.to_csv(workDir + "Species GBIF Summary Stats.csv");print('\nExporting Dataframe to CSV...')
 
 # Delete temporary objects
-#del tablelst, n, eor, recs, cnt, df, data0, df0, dfMaster, dfAppended
+#del tablelst, n, eor, recs, cnt, df, data0
+#del df0, dfSppRecs, dfSppRecsMaster, dfAppended, dfSppInfo, dfSppInfoMaster
 
-
-print('\n*********************** DONE *******************************')
+endTime = datetime.now(); procDelta = endTime - beginTime
+print("\n\nProcessing time = " + str(procDelta) + "\n")
+print('*'*35,'DONE','*'*35)
