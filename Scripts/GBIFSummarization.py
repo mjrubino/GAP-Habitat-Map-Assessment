@@ -74,7 +74,7 @@ tempDir = workDir + 'temp/'
 #   Species list - start with it static 
 #   then move toward a more robust, dynamic method - ScienceBase?
 
-sppList = config.LessThan30000
+sppList = config.LessThan5000
 #sppList = ['Onychoprion anaethetus']
 #sppList = ['Plethodon chlorobryonis','Desmognathus quadramaculatus','Pseudacris brimleyi',
 #'Taricha torosa','Hyla chrysoscelis','Plethodon idahoensis','Ambystoma californiense'
@@ -117,7 +117,8 @@ def SummaryInfo(sp, dframe):
       nCoordUncty:    Number of records with values for coordinate uncertainty
       minCoordUncty:  Lowest coordinate uncertainty
       maxCoordUncty:  Highest coordinate uncertainty
-      RecordBasis:	Type/method of record collection such as 'human observation' or 'preserved specimen'
+      meanCoordUncty: Mean coordinate uncertainty
+      RecordBasis:	 Type/method of record collection such as 'human observation' or 'preserved specimen'
       nTextDesc:      Number of times textual location information was entered for any occurrence
       nGeoDatum:      Number of records listing geodetic datum
       nMonth:         Number of records listing a collection month
@@ -135,7 +136,8 @@ def SummaryInfo(sp, dframe):
     
     # Make an empty list and set column names
     reclst = []
-    lstcols = ['SppName','nRecords','nCoordUncty','minCoordUncty','maxCoordUncty',
+    lstcols = ['SppName','nRecords','nCoordUncty',
+               'minCoordUncty','maxCoordUncty','meanCoordUncty',
                'RecordBasis','nTextDesc',
                'nGeoDatum','nMonth','nYear',
                'nSciNameRecs','nComNameRecs','ComNames',
@@ -145,11 +147,13 @@ def SummaryInfo(sp, dframe):
     cntRecs = len(dframe)
     
     # Get the number of records with values for coordinate uncertainty
-    # and the minimum and maximum values of uncertainty
+    # and the minimum, maximum, and mean values of uncertainty
     cntCoUn = dframe['coordinateUncertaintyInMeters'].count()
     minCoUn = dframe['coordinateUncertaintyInMeters'].min()
     maxCoUn = dframe['coordinateUncertaintyInMeters'].max()
+    menCoUn = dframe['coordinateUncertaintyInMeters'].mean()
     
+    # Get a list of the unique types(basis) of records
     lstRBUnique = dframe['basisOfRecord'].drop_duplicates()
     lstRB = list(lstRBUnique)
     # remove NaNs from the list
@@ -197,7 +201,7 @@ def SummaryInfo(sp, dframe):
 
     # Append all the data into the empty list with column names
     reclst.append([sp,cntRecs,cntCoUn,minCoUn,maxCoUn,
-                   lstRcBs,cntText,
+                   menCoUn,lstRcBs,cntText,
                    cntGeDa,cntMnth,cntYear,
                    cntScNm,cntCoNm,lstCoNm,
                    lstTxRn,lstTxSt])
