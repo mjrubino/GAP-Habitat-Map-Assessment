@@ -74,23 +74,25 @@ tempDir = workDir + 'temp/'
 #   Species list - start with it static 
 #   then move toward a more robust, dynamic method - ScienceBase?
 
-sppList = config.LessThan5000
-#sppList = ['Onychoprion anaethetus']
-#sppList = ['Plethodon chlorobryonis','Desmognathus quadramaculatus','Pseudacris brimleyi',
-#'Taricha torosa','Hyla chrysoscelis','Plethodon idahoensis','Ambystoma californiense'
-#,'Lithobates areolatus','Notophthalmus viridescens','Ensatina eschscholtzii',
-#'Rana boylii','Anaxyrus cognatus','Ambystoma talpoideum','Spea bombifrons',
-#'Hyla squirella','Strix varia','Mniotilta varia','Poecile atricapillus','Thryomanes bewickii',
-#'Polioptila caerulea','Catharus bicknelli','Dolichonyx oryzivorus','Psaltriparus minimus',
-#'Polioptila californica','Catherpes mexicanus','Nucifraga columbiana','Uria aalge',
-#'Zonotrichia leucophrys','Parabuteo unicinctus','Mergus serrator','Archilochus colubris',
-#'Piranga olivacea','Sphyrapicus thyroideus','Microtus californicus',
-#'Pecari tajacu','Tamiasciurus douglasii','Martes pennanti','Mustela nivalis',
-#'Tamias speciosus','Alces americanus','Geomys bursarius','Arborimus longicaudus',
-#'Glaucomys volans','Sorex fumeus','Thomomys mazama','Thamnophis sauritus',
-#'Kinosternon subrubrum','Senticolis triaspis','Plestiodon egregius','Chrysemys picta',
-#'Aspidoscelis xanthonota','Nerodia clarkii','Thamnophis elegans','Pseudemys texana',
-#'Sceloporus jarrovii']
+#sppList = config.LessThan30000
+sppList=['Batrachoseps luciae',
+'Blarina carolinensis',
+'Dendroica palmarum',
+'Glaucomys sabrinus',
+'Myotis auriculus',
+'Myotis evotis',
+'Sylvilagus nuttallii',
+'Xantusia henshawi',
+'Calcarius pictus',
+'Leucosticte australis',
+'Tympanuchus cupido',
+'Procyon lotor',
+'Puffinus puffinus',
+'Canis latrans',
+'Buteo albicaudatus',
+'Batrachoseps attenuatus',
+'Ammodramus caudacutus']
+
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
