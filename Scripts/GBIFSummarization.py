@@ -75,23 +75,7 @@ tempDir = workDir + 'temp/'
 #   then move toward a more robust, dynamic method - ScienceBase?
 
 #sppList = config.LessThan30000
-sppList=['Batrachoseps luciae',
-'Blarina carolinensis',
-'Dendroica palmarum',
-'Glaucomys sabrinus',
-'Myotis auriculus',
-'Myotis evotis',
-'Sylvilagus nuttallii',
-'Xantusia henshawi',
-'Calcarius pictus',
-'Leucosticte australis',
-'Tympanuchus cupido',
-'Procyon lotor',
-'Puffinus puffinus',
-'Canis latrans',
-'Buteo albicaudatus',
-'Batrachoseps attenuatus',
-'Ammodramus caudacutus']
+sppList=['Blarina carolinensis']
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -299,15 +283,15 @@ for sp in sppList:
         # dataframe of occurrences with the pared down number of columns
         dfSppRecs = GetGBIF(sp)
         # Now append this thinned dataframe to the master
-        #dfSppRecsMaster = dfSppRecsMaster.append(dfSppRecs, ignore_index=True, sort=False)
+        dfSppRecsMaster = dfSppRecsMaster.append(dfSppRecs, ignore_index=True, sort=False)
 
 
         # -------------------------------------------------------------
         # Call the SummaryInfo function to assemble some stats on 
         # GBIF records for each of the assessed species
-        dfSppInfo = SummaryInfo(sp, dfSppRecs)
+        #dfSppInfo = SummaryInfo(sp, dfSppRecs)
         # Append this to the master species info dataframe
-        dfSppInfoMaster = dfSppInfoMaster.append(dfSppInfo, ignore_index=True, sort=False)
+        #dfSppInfoMaster = dfSppInfoMaster.append(dfSppInfo, ignore_index=True, sort=False)
         # -------------------------------------------------------------
     except:
         print('   Had problems connecting to GBIF.\n\
@@ -317,9 +301,9 @@ for sp in sppList:
 
 
 # Export to CSV
-#dfSppRecsMaster.to_csv(tempDir + "SpeciesOccurrences-GBIF.csv")
+dfSppRecsMaster.to_csv(tempDir + "SpeciesOccurrences-GBIF.csv")
 #dfAppended.to_csv(tempDir + "{0}-GBIF.csv".format(spp))
-dfSppInfoMaster.to_csv(workDir + "Species GBIF Summary Stats.csv");print('\nExporting Dataframe to CSV...')
+#dfSppInfoMaster.to_csv(workDir + "Species GBIF Summary Stats.csv");print('\nExporting Dataframe to CSV...')
 
 # Delete temporary objects
 #del tablelst, n, eor, recs, cnt, df, data0
