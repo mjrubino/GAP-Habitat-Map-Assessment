@@ -49,7 +49,7 @@
               species taxonomic status
               
           It would certainly be possible to alter which fields are output
-          considering there are as many as 135 fields in the GBIF datasets.
+          considering there are as many as 170 fields in the GBIF datasets.
           However, many of these fields are blank for most species.
 
 Created on Wed Dec 19 15:10:15 2018

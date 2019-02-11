@@ -12,7 +12,7 @@ from pygbif import occurrences as occ
 workDir = 'C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/'
 tempDir = workDir + 'temp/'
 
-spp='Blarina carolinensis'
+spp='Myiarchus sagrae'
 
 df0 = pd.DataFrame()
 
@@ -48,6 +48,22 @@ while eor == False:
 df = pd.DataFrame(data=tablelst)
 # Append it to the empty dataframe
 dfAppended = df0.append(df, ignore_index=True, sort=False)
-print('Exporting occurrence records to CSV....')
-dfAppended.to_csv(tempDir + "GBIF-{0}.csv".format(spp))
+# Export to a CSV
+#print('Exporting occurrence records to CSV....')
+#dfAppended.to_csv(tempDir + "GBIF-{0}.csv".format(spp))
+
+'''
+# Use this to pull out a column such as 'issues' that is composed of 
+# a combination of elements in lists ...
 dfIssuesCol = dfAppended[['issues']]
+# ... then use set comprehension to get a unique set of those elements
+uniqueIssues = {row for rows in dfIssuesCol['issues'] for row in rows}
+print(uniqueIssues)
+'''
+
+
+
+
+
+
+
