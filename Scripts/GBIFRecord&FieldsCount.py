@@ -20,7 +20,7 @@ workDir = 'C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/'
 beginTime = datetime.now()
 print("*"*40); print('Began ' + str(beginTime)); print("*"*40)
 
-sppList=['Nerodia erythrogaster','Scaphiopus holbrookii']
+sppList=['Coccyzus americanus']
 #sppList = config.LessThan30000
 
 
