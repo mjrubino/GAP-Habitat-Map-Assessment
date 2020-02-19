@@ -71,8 +71,15 @@ t0 = datetime.now()
 # sensitivity measurement (true positive fraction) of occurrence points with at
 # least one (or >= proportion habitat in range threshold) habitat cell within the
 # coordinate uncertainty buffer area - BSM
-sppcode = 'bEAWPx'
-prophab = 0.388
+sppcode = 'aBESAx'
+prophab = 0.040
+# Suitable habitat raster value
+# For original GAP habitat map rasters values are seasonal:
+#  1 = summer only
+#  2 = winter only
+#  3 = year-round
+# NOTE: these values could be altered to just 1s if all seasons are used
+habval = 3
 
 # Directory variables
 workDir = 'C:/Data/temp/AccuracyMockup/'
@@ -85,7 +92,8 @@ shpBuff = workDir + '{0}_GBIF_Buffered.shp'.format(sppcode)
 # This TIF raster is a 0-1 species habitat map. It assumes that all habitat
 # cells in the raster are 1s and all non-habitat cells are 0s. If different
 # habitat TIFs are used, the code will need to be altered.
-HabMap = sppDir + '{0}.tif'.format(sppcode)
+#HabMap = sppDir + '{0}.tif'.format(sppcode)
+HabMap = sppDir + '{0}_CONUS_HabMap_2001v1.tif'.format(sppcode)
 
 
 # Make an empty final habitat/non-habitat stats list
@@ -134,8 +142,8 @@ for i in gdfPtBuffs.index:
                                        dtype=np.uint8
                                         )
     '''
-    # Get the count of the number of habitat cells: in this case = 1
-    cnt1 = len(mask_arr[mask_arr==1])
+    # Get the count of the number of habitat cells: habval variable set above
+    cnt1 = len(mask_arr[mask_arr==habval])
     # Get the count of the number of non-habitat cells: in this case = 0
     cnt0 = len(mask_arr[mask_arr==0])
     # Get the total number of cells in the point buffer mask
