@@ -48,6 +48,7 @@ Created on Fri Feb 14 13:08:30 2020
 import rasterio
 import rasterio.mask
 from shapely.geometry import mapping
+import sqlite3
 import pandas as pd
 import geopandas as gpd
 import numpy as np
@@ -79,7 +80,7 @@ prophab = 0.040
 #  2 = winter only
 #  3 = year-round
 # NOTE: these values could be altered to just 1s if all seasons are used
-habval = 3
+habval = 1
 
 # Directory variables
 workDir = 'C:/Data/temp/AccuracyMockup/'
@@ -92,8 +93,8 @@ shpBuff = workDir + '{0}_GBIF_Buffered.shp'.format(sppcode)
 # This TIF raster is a 0-1 species habitat map. It assumes that all habitat
 # cells in the raster are 1s and all non-habitat cells are 0s. If different
 # habitat TIFs are used, the code will need to be altered.
-#HabMap = sppDir + '{0}.tif'.format(sppcode)
-HabMap = sppDir + '{0}_CONUS_HabMap_2001v1.tif'.format(sppcode)
+HabMap = sppDir + '{0}.tif'.format(sppcode)
+#HabMap = sppDir + '{0}_CONUS_HabMap_2001v1.tif'.format(sppcode)
 
 
 # Make an empty final habitat/non-habitat stats list
@@ -102,15 +103,56 @@ statcols = ['BufferDist','nCellsHab',
         'nCellsNon','nCells',
         'PropHab','PropNonHab']
 
+# Make an empty list of non-overlapping buffers
+nonlst = []
+noncols = ['OccID','OrigIndex','BufferDist']
+
+
+
+
 print('\nWorking on the Following Species Code:',sppcode)
-print('\n  Opening Point Buffer Shapefile into a GeoPandas Dataframe ....')
+print('\n  Opening Point Buffer Geometries into a GeoPandas Dataframe ....')
+
+'''
+ This uses a point buffer shapefile as the data source 
+
 # Open the point buffer shapefile with GeoPandas
 gdfPtBuffs = gpd.read_file(shpBuff)
 # Extract the geometries in GeoJSON format
 geoms = gdfPtBuffs.geometry.values
+'''
+
+'''
+ This opens a GeoPandas Dataframe directly from a Spatialite db
+ located in the workDir/db directory and named bwewax0GBIFr9GBIFf9.sqlite
+ where the column 'circle_5070' is a geometry column of circular pt buffers
+ and 'radius_meters' is the buffer distance in meters.
+'''
+import os
+dbDir = "C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/db/"
+db = dbDir + "bwewax0GBIFr9GBIFf9.sqlite"
+conn = sqlite3.connect(db, isolation_level='DEFERRED')
+
+
+spltpth = 'C:/Spatialite'
+os.environ['PATH'] = os.environ['PATH']+ ';' + spltpth
+os.environ['SPATIALITE_SECURITY'] = 'relaxed'
+conn.enable_load_extension(True)
+conn.execute("select load_extension('mod_spatialite')")
+cursor = conn.cursor()
+sql = "SELECT occ_id, radius_meters, Hex(ST_AsBinary(circle_5070)) AS geom FROM occurrences"
+gdfPtBuffs = gpd.GeoDataFrame.from_postgis(sql, conn, crs={'init': 'epsg:5070'})
+# Get only a handful of buffers
+#gdfBuffs401 = gdfPtBuffs[gdfPtBuffs['radius_meters']>400]
+# Reset the index for looping
+#gdfBuffs401 = gdfBuffs401.reset_index()
+geoms = gdfPtBuffs.geometry.values
+
+
+
 
 # Loop over each point buffer to mask the species habitat raster
-print('  Masking species habitat map with each point buffer in the shapefile ....')
+print('  Masking species habitat map with each point buffer ....')
 for i in gdfPtBuffs.index:
     
     # Select a single point buffer from an index value in the GeoJSON geometries
@@ -118,41 +160,70 @@ for i in gdfPtBuffs.index:
     
     # Get the buffer distance value
     dist = gdfPtBuffs.at[i,'BUFF_DIST']
+    #dist = gdfBuffs401.at[i,'radius_meters']
     
-    # Mask with the species habitat map raster
-    #kwargs.update(BIGTIFF="IF_SAFER")
-    #with rasterio.open(HabMap, "r", **kwargs) as habras:
-    with rasterio.open(HabMap) as habras:
-        mask_arr, mask_transform = rasterio.mask.mask(habras, buff, crop=True)
-        mask_meta = habras.meta
+    try:
         
-    # Create a rasterized version of the point buffer polygon
-    b = geoms[i]
-    xdiff = b.bounds[2] - b.bounds[0]
-    ydiff = b.bounds[3] - b.bounds[1]
-    rows = int(math.ceil(xdiff/30))
-    cols = int(math.ceil(ydiff/30))
-    '''
-    shpgen = [(shape, 3) for shape in gdfPtBuffs['geometry']]
-    transform = rasterio.transform.from_bounds(*df['geometry'].total_bounds, *shape)
-    ma = rasterio.enums.MergeAlg
-    mask = rasterio.features.rasterize(b, out_shape=(rows,cols),
-                                       fill=0,
-                                       merge_alg=ma.replace,
-                                       dtype=np.uint8
-                                        )
-    '''
-    # Get the count of the number of habitat cells: habval variable set above
-    cnt1 = len(mask_arr[mask_arr==habval])
-    # Get the count of the number of non-habitat cells: in this case = 0
-    cnt0 = len(mask_arr[mask_arr==0])
-    # Get the total number of cells in the point buffer mask
-    ncells = cnt0 +  cnt1
-    # Get the proportion of habitat and non-habitat in the point buffer
-    propHab = (cnt1/ncells)
-    propNon = (cnt0/ncells)
-    # Append to the stats list
-    statslst.append([dist,cnt1,cnt0,ncells,propHab,propNon])
+        # Mask with the species habitat map raster
+        with rasterio.open(HabMap) as habras:
+            mask_arr, mask_transform = rasterio.mask.mask(habras, buff, crop=True)
+        
+        '''    
+        # Create a rasterized version of the point buffer polygon
+        b = geoms[i]
+        xmin, ymin, xmax, ymax = b.bounds
+        xdiff = xmax - xmin
+        ydiff = ymax - ymin
+        rows = int(math.ceil(xdiff/30))
+        cols = int(math.ceil(ydiff/30))
+        
+        # Do this with RasterIO - attempting - doesn't work yet
+        shpgen = [(shape, 3) for shape in gdfPtBuffs['geometry']][i]
+        transform = rasterio.transform.from_bounds(*df['geometry'].total_bounds, *shape)
+        ma = rasterio.enums.MergeAlg
+        mask = rasterio.features.rasterize(b, out_shape=(rows,cols),
+                                           fill=0,
+                                           merge_alg=ma.replace,
+                                           dtype=np.uint8
+                                            )
+        
+        # Trying to rasterize using straight-up GDAL
+        from osgeo import gdal, ogr
+        nodata = 0
+        dataDir = 'C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/data/'
+        outras = dataDir + 'BufferRaster.tif'
+        # Create the destination data source
+        target_ds = gdal.GetDriverByName('GTiff').Create(outras, rows, cols, 1, gdal.GDT_Byte)
+        target_ds.SetGeoTransform((xmin, 30, 0, ymax, 0, -30))
+        band = target_ds.GetRasterBand(1)
+        band.SetNoDataValue(nodata)
+        
+        # Rasterize
+        gdal.RasterizeLayer(target_ds, [1], source_layer, burn_values=[0])
+        
+        '''
+        # Get the count of the number of habitat cells: habval variable set above
+        cnt1 = len(mask_arr[mask_arr==habval])
+        # Get the count of the number of non-habitat cells: in this case = 0
+        cnt0 = len(mask_arr[mask_arr==0])
+        # Get the total number of cells in the point buffer mask
+        ncells = cnt0 +  cnt1
+        # Get the proportion of habitat and non-habitat in the point buffer
+        propHab = (cnt1/ncells)
+        propNon = (cnt0/ncells)
+        # Append to the stats list
+        statslst.append([dist,cnt1,cnt0,ncells,propHab,propNon])
+        
+    except ValueError:
+        print('   Buffer does not overlap with species habitat raster')
+        # Assemble info on the buffers that did not overlap into a dataframe
+        oid = gdfBuffs401.at[i,'occ_id']
+        idx = gdfBuffs401.at[i,'index']
+        nonlst.append([oid,idx,dist])
+        dfNonOverlaps = pd.DataFrame(nonlst, columns=noncols)
+        
+        
+        
     
 # Make the DataFrame by using the appended raster data list and export to CSV
 print("\n\nCreating DataFrame dfHabStats")
@@ -173,13 +244,18 @@ for c in buffcats:
     df = dfHabStats[dfHabStats['BufferDist'] <= c]
     # Calculate buffer category sensitivity stats
     n = len(df)
-    # Count 'habitat presence' as anything not 0 in hab cell count
-    fn = df.loc[df['nCellsHab'] == 0, 'nCellsHab'].count()
-    tp = n - fn
-    # Count 'habitat presence' using a threshold (prop hab in range)
-    #tp = df.loc[df['PropHab'] >= prophab, 'nCellsHab'].count()
-    #fn = n - tp
-    sens = tp / n
+    if n > 0:
+        # Count 'habitat presence' as anything not 0 in hab cell count
+        fn = df.loc[df['nCellsHab'] == 0, 'nCellsHab'].count()
+        tp = n - fn
+        # Count 'habitat presence' using a threshold (prop hab in range)
+        #tp = df.loc[df['PropHab'] >= prophab, 'nCellsHab'].count()
+        #fn = n - tp
+        sens = tp / n
+    else:
+        tp = 0
+        fn = 0
+        sens = 0
     # Calculate an exact one-sided binomial test for each buffer distance
     p = stats.binom_test(tp, n=n, p=prophab, alternative='greater')
     if p < 0.0001:
@@ -234,7 +310,7 @@ br2 = ax1.bar(dfSens['BufferCat'].astype(str), dfSens['TruePos'], color='lightbl
 ax2.yaxis.tick_left()
 ax1.yaxis.tick_right()
 
-ax2.set_ylim(0,1)
+ax2.set_ylim(0,1.1)
 ax1.set_ylim(0,ymax)
 
 ax1.set_xlabel("Buffer Distance Category (m)")
