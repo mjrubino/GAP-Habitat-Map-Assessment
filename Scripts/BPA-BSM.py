@@ -56,6 +56,7 @@ from datetime import datetime
 import math
 from scipy import stats
 import matplotlib.pyplot as plt
+import glob
 
 
 
@@ -64,7 +65,19 @@ pd.set_option('display.max_rows', 100)
 
 t0 = datetime.now()
 
-# Set some variables
+# Directory variables
+# Macbook specific
+#workDir = '/Users/matthewrubino/GAP-Habitat-Map-Assessment/'
+# Windows specific
+workDir = "D:/USGS Analyses/GAP-Habitat-Map-Assessment/"
+dbDir = workDir + 'Outputs/'
+sppDir = 'P:/Proj3/USGap/Vert/Model/Output/CONUS/01/Any/'
+
+# This TIF raster is a 0-1 species habitat map. It assumes that all habitat
+# cells in the raster are 1s and all non-habitat cells are 0s. If different
+# habitat TIFs are used, the code will need to be altered.
+HabMap = sppDir + f'{sppcode}_CONUS_01A_2001v1.tif'
+#HabMap = sppDir + '{0}_CONUS_HabMap_2001v1.tif'.format(sppcode)
 
 # The variable prophab is the proportion of habitat in the species range estimated
 # by the habitat model. It is compared with the mean proportion of habitat within
@@ -72,8 +85,31 @@ t0 = datetime.now()
 # sensitivity measurement (true positive fraction) of occurrence points with at
 # least one (or >= proportion habitat in range threshold) habitat cell within the
 # coordinate uncertainty buffer area - BSM
-sppcode = 'aMASAx'
-prophab = 0.159
+sppcode = 'aBESAx'
+prophab = 0.040
+
+# Using the occurrence db naming convention, set a variable using
+# the species code in the designated db that was searched
+# This is the 'species_id' in the species_concept table
+# 
+paramdb = workDir + 'db/' + 'wildlife-wrangler.sqlite'
+conn = sqlite3.connect(paramdb, isolation_level='DEFERRED')
+dfPdb = pd.read_sql_query("SELECT species_id FROM species_concepts", conn)
+# Get a list of the species IDs that contain the species code
+idlist = [i for i in dfPdb['species_id'] if sppcode.lower() in i]
+print('The parameters db has the following list of species IDs containing the species code',sppcode,':\n')
+for sid in idlist:
+    print(sid)
+s = input('Enter the species ID you would like to run: ')
+while s not in idlist:
+    print('That species ID is not in the list.')
+    s = input('Enter a valid ID: ')
+
+print('You are running the following species ID: ' + s)
+species_id = s
+del s
+conn.close()
+
 # Suitable habitat raster value
 # For original GAP habitat map rasters values are seasonal:
 #  1 = summer only
@@ -82,19 +118,6 @@ prophab = 0.159
 # NOTE: these values could be altered to just 1s if all seasons are used
 habval = 1
 
-# Directory variables
-# Macbook specific
-workDir = '/Users/matthewrubino/GAP-Habitat-Map-Assessment/'
-# Windows specific
-#dbDir = "C:/Data/USGS Analyses/GAP-Habitat-Map-Assessment/"
-dbDir = workDir + 'db/'
-sppDir = workDir + 'species/'
-
-# This TIF raster is a 0-1 species habitat map. It assumes that all habitat
-# cells in the raster are 1s and all non-habitat cells are 0s. If different
-# habitat TIFs are used, the code will need to be altered.
-HabMap = sppDir + f'{sppcode}_CONUS_01A_2001v1.tif'
-#HabMap = sppDir + '{0}_CONUS_HabMap_2001v1.tif'.format(sppcode)
 
 print('\nWorking on the Following Species Code:',sppcode)
 print('\n  Opening Point Buffer Geometries into a GeoPandas Dataframe ....')
@@ -122,7 +145,7 @@ geoms = gdfPtBuffs.geometry.values
  with a minimum of 30 meters based on coordinate uncertainty.
 '''
 
-db = dbDir + f"{sppcode}.sqlite"
+db = glob.glob(dbDir + f"{species_id}*.sqlite")[0]
 conn = sqlite3.connect(db, isolation_level='DEFERRED')
 # Bring the occurrence id, latitude and longitude, and coordinate uncertainty
 # in the species SQLite db into a Pandas dataframe
@@ -133,7 +156,11 @@ dtdict = {'occ_id':'str','longitude':'float','latitude':'float',
 df = pd.read_sql_query("SELECT occ_id, longitude, latitude, \
                         coordinateUncertaintyInMeters FROM occurrences", conn)
 
-dfPts = df.astype(dtdict)
+df = df.astype(dtdict)
+# Some duplicate points may have gotten through. Keep the ones with
+# the lowest coordinate uncertainty.
+dfPts = df.sort_values('coordinateUncertaintyInMeters').drop_duplicates(subset=['longitude', 'latitude'], keep='first')
+dfPts = dfPts.reset_index()
 
 # Bring the lat-longs into a geometry for GeoPandas
 gdf = gpd.GeoDataFrame(dfPts, geometry=gpd.points_from_xy(dfPts.longitude, dfPts.latitude),
@@ -239,7 +266,7 @@ for c in buffcats:
     if p < 0.0001:
         pv = "< 0.0001"
     else:
-        pv = str(round(p,4))
+        pv = "= " + str(round(p,4))
     # Add to the stats list
     statlst.append([c,tp,fn,sens,n,pv])
 
@@ -327,7 +354,7 @@ def plabel(a, rects, pvalue, xpos='center'):
     for i, rect in enumerate(rects):
         height = rect.get_height()
         a.text(rect.get_x() + rect.get_width()*offset[xpos], 1.0*height,
-                r'$p = {}$'.format(pvalue[i]), ha=ha[xpos], va='bottom')
+                r'$p {}$'.format(pvalue[i]), ha=ha[xpos], va='bottom')
 
 pvals = dfSens['p-Value']
 plabel(ax1,br,pvals,'center')
