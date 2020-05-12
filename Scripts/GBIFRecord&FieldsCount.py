@@ -101,7 +101,7 @@ for sp in sppList:
 
 # Make a dataframe out of the compiled lists and save as CSV
 dfRecordCount = pd.DataFrame(data=reclst, columns=lstcols)
-dfRecordCount.to_csv(workDir + "SpeciesOccurrenceCounts-GBIF.csv")
+dfRecordCount.to_csv(workDir + "SpeciesOccurrenceFieldCounts-GBIF.csv")
 
 #del reclst,lstcols,spp,recs,cnt,dfRecordCount
 

@@ -1,0 +1,62 @@
+#############################################################################################################
+'''
+    NatureServe API Navigation - REST Web services
+
+'''
+def SearchNS(st, keyID):
+
+
+    # Search the global species list service using either Scientific Name or Common Name
+    urlName = "https://services.natureserve.org/idd/rest/ns/v1/globalSpecies/list/nameSearch?name=" + \
+                st.replace(" ", "%20") + "&NSAccessKeyId=" + keyID
+
+    # Parse the XML holding species data using the URL above
+    tree = ET.parse(urllib.request.urlopen(urlName))
+    root = tree.getroot()
+    # Find the global species unique id element in the root
+    rTxt = ".//{http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1}"
+    elID = root.findall(rTxt + "globalSpeciesUid")
+
+    try:
+        # Get the global species unique id text if the taxonomy is acceptable
+        guid = elID[0].text
+        # Search the global comprehensive species service
+        # Go into the comprehensive species report tree using the global id
+        urlComp = "https://services.natureserve.org/idd/rest/ns/v1.1/globalSpecies/comprehensive?uid=" + \
+                   guid + "&NSAccessKeyId=" + keyID
+        # Parse the XML holding species data using the URL above
+        tree = ET.parse(urllib.request.urlopen(urlComp))
+        root = tree.getroot()
+        # Find the scientific name element in the root
+        elName = root.findall(rTxt + "unformattedName")
+        nameNS = elName[0].text
+        # Find the taxonomic comments in the root
+        # Make sure there are comments prior to setting the variable
+        elComm = root.findall(rTxt + "taxonomicComments")
+        if len(elComm) != 0:
+            comm = elComm[0].text
+            # Remove the HTML tags in the comments text
+            commNS = re.sub('<[^<]+?>', '', comm)
+        else:
+            commNS = ''
+        # Find if US national status is Native
+        path = root.findall(rTxt + "nation[@nationCode='US']")
+        if len(path) != 0:
+            cntyNS = 'US'
+            # Iterate through multiple 'nationalDistribution' records to find the origin
+            for child in path[0][0]:
+                origNS = child[0].text
+        else:
+            cntyNS = ''
+            origNS = ''
+
+    except IndexError:
+        guid = 'NA'
+        nameNS = 'NA'
+        commNS = ''
+        cntyNS = ''
+        origNS = ''
+
+
+    # Return a tuple of information from the API search
+    return guid, nameNS, commNS, cntyNS, origNS

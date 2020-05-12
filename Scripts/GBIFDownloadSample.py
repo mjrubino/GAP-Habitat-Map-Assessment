@@ -44,8 +44,8 @@ else:
     os.mkdir(downDir)
 '''
 
-
-sciName = 'Strix nebulosa'  # Small number of records
+sciName='Desmognathus quadramaculatus'
+#sciName = 'Strix nebulosa'  # Small number of records
 #sciName = 'Buteo lagopus'  # >200k records
 
 # First use the species module to get the taxonKey for a species scientific name

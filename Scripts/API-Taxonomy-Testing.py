@@ -43,6 +43,7 @@ pd.set_option('display.max_rows', 100)
 keyID = 'cd08be35-cef1-46ec-a402-f108541b600e'
 # IUCN token
 iucnToken = '9367077434703397072e089e4d2940bfd973ff3238b03e6de326cb3948847403'
+# GBIF User name, email and password
 userGBIF = 'mjrubino'
 pwdGBIF= 'warbler'
 emailGBIF = 'matt_rubino@ncsu.edu'
@@ -286,8 +287,13 @@ def SearchGBIF(st, user, pwd, email):
     urlName = gbifTxt + "species/search?q=" + st + "&rank=SPECIES"
     jName = requests.get(urlName).json()
     r = jName['results']
+    gid = r[1]['nubKey']
+    nameGBIF = r[1]['scientificName']
+    nameOrig = r[1]['origin']
+    commGBIF = r[1]['vernacularNames'][0]['vernacularName']
 
-
+    # Return a tuple of information from the API search
+    return gid, nameGBIF, commGBIF, nameOrig
 
 #############################################################################################################
 '''
