@@ -1,0 +1,98 @@
+SpeciesCode,SciName,ComName,SpeciesID,RequestID,FilterID,PropHab,HabCellValue,Notes
+aABSAx,Eurycea waterlooensis,Austin Blind Salamander,aabsax0,EvalGBIFRequest01,EvalGBIFFilter2,0.021,1,0 records returned using default evaluation GBIF request and filter. No occurrence dB generated. GBIF reports only 3 georeferenced occurrences and coordinate uncertainty is more than 10k.
+aADSAx,Desmognathus apalachicolae,Apalachicola Dusky Salamander,aadsax0,EvalGBIFRequest89,EvalGBIFFilter2,0.057,1,Only 15 records returned using custom dated request
+aAGTOx,Anaxyrus nelsoni,Amargosa Toad,aagtox0,EvalGBIFRequest4,EvalGBIFFilter2,0.042,1,Only 14 records returned least restrictive evaluation request. No occurrence dB generated.
+aBCSAx,Gyrinophilus gulolineatus,Berry Cave Salamander,abcsax0,EvalGBIFRequest65,EvalGBIFFilter2,0.041,1,0 records returned least restrictive evaluation request. No occurrence dB generated.
+aBGCSx,Plethodon amplus,Blue Ridge Gray-cheeked Salamander,abgcsx0,EvalGBIFRequest00,EvalGBIFFilter2,0.041,1,0 records returned least restrictive evaluation request. No occurrence dB generated.
+aBGSAx,Plethodon sherando,Big Levels Salamander,abgsax0,EvalGBIFRequest04,EvalGBIFFilter2,0.429,1,0 records are returned using the least stringent request. No occurrence dB generated.
+aBLSAx,Eurycea robusta,Blanco Blind Salamander,ablsax0,EvalGBIFRequest78,EvalGBIFFilter2,0.005,1,0 records with coordinates. No occurrence dB generated.
+aBLTOx,Anaxyrus exsul,Black Toad,abltox0,EvalGBIFRequest4,EvalGBIFFilter2,0.009,1,Only 9 records returned using least stringent request. No occurrence dB generated.
+aBSNEx,Notophthalmus meridionalis,Black-spotted Newt,absnex0,EvalGBIFRequest4,EvalGBIFFilter2,0.029,1,0 records are returned using the least stringent request. No occurrence dB generated.
+aBSPSx,Eurycea sosorum,Barton Springs Salamander,abspsx0,EvalGBIFRequest93,EvalGBIFFilter2,0.053,1,0 records are returned using the least stringent request. No occurrence dB generated.
+aBUTOx,Rhinophrynus dorsalis,Burrowing Toad,abutox0,EvalGBIFRequest4,EvalGBIFFilter2,0.664,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aBWRWx,Necturus alabamensis,Black Warrior River Waterdog,abwrwx0,EvalGBIFRequest4,EvalGBIFFilter2,0.001,1,Only 19 records are returned using the least stringent request. No occurrence dB generated.
+aCBSAx,Eurycea tridentifera,Comal Blind Salamander,acbsax0,EvalGBIFRequest65,EvalGBIFFilter2,0.022,1,Only 5 records are returned using the least stringent request. No occurrence dB generated.
+aCCSAx,Eurycea latitans,Cascade Caverns Salamander,accsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.045,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aCHDSx,Eurycea chamberlaini,Chamberlain's Dwarf Salamander,achdsx0,EvalGBIFRequest03,EvalGBIFFilter2,0.065,1,Only 7 records returned using custom dated request
+aCHSAx,Plethodon cheoah,Cheoah Bald Salamander,achsax0,EvalGBIFRequest00,EvalGBIFFilter2,0.363,1,No records returned using least stringent request. No occurrence dB generated.
+aCKSAx,Plethodon punctatus,Cow Knob Salamander,acksax0,EvalGBIFRequest72,EvalGBIFFilter2,0.059,1,Only 13 records are returned using custom dated request
+aCMSAx,Plethodon caddoensis,Caddo Mountain Salamander,acmsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.497,1,Only 6 records are returned using the least stringent request. No occurrence dB generated. This one is strange because 100s to 1000+ records are returned prior to filtering.
+aCMTSx,Plethodon nettingi,Cheat Mountain Salamander,acmtsx0,EvalGBIFRequest4,EvalGBIFFilter2,0.55,1,Only 15 records are returned using the least stringent request. No occurrence dB generated.
+aCOSAx,Plethodon idahoensis,Coeur D'alene Salamander,acosax0,EvalGBIFRequest4,EvalGBIFFilter2,0.112,1,Only 17 records are returned using the least stringent request. No occurrence dB generated.
+aCPSAx,Plethodon kentucki,Cumberland Plateau Salamander,acpsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.083,1,Only 19 records are returned using the least stringent request. No occurrence dB generated.
+aCSMSx,Plethodon chattahoochee,Chattahoochee Slimy Salamander,acsmsx0,EvalGBIFRequest89,EvalGBIFFilter2,0.525,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aCTOSx,Rhyacotriton kezeri,Columbia Torrent Salamander,actosx0,EvalGBIFRequest92,EvalGBIFFilter2,0.217,1,Only 11 records returned using custom dated request
+aCTRSx,Rhyacotriton cascadae,Cascade Torrent Salamander,actrsx0,EvalGBIFRequest92,EvalGBIFFilter2,0.146,1,Only 2 records returned using most stringent request. No occurrence dB generated.
+aCUDSx,Desmognathus abditus,Cumberland Dusky Salamander,acudsx0,EvalGBIFRequest03,EvalGBIFFilter2,0.056,1,0 records returned using the least stringent request. No occurrence dB generated.
+aDASAx,Eurycea aquatica,Dark-sided Salamander,adasax0,EvalGBIFRequest63,EvalGBIFFilter2,0.064,1,Only 1 record returned using the least stringent request. No occurrence dB generated.
+aDBBSx,Desmognathus folkertsi,Dwarf Black-bellied Salamander,adbbsx0,EvalGBIFRequest4,EvalGBIFFilter2,0.022,1,No records are returned using the least stringent request. No occurrence dB generated.
+aDGFRx,Lithobates sevosus,Dusky Gopher Frog,adgfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.146,1,Only 1 record are returned using the least stringent request. No occurrence dB generated.
+aFBFRx,Lithobates okaloosae,Florida Bog Frog,afbfrx0,EvalGBIFRequest85,EvalGBIFFilter2,0.038,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aFBSAx,Eurycea pterophila,Fern Bank Salamander,afbsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.071,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.
+aFFSAx,Ambystoma cingulatum,Frosted Flatwoods Salamander,affsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.156,1,Only 8 records are returned using the least stringent request. No occurrence dB generated.
+aFMSAx,Plethodon fourchensis,Fourch Mountain Salamander,afmsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.464,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aGBSAx,Haideotriton wallacei,Georgia Blind Salamander,agbsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.031,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.
+aGCTOx,Ollotis nebulifer,Gulf Coast Toad,agctox0,EvalGBIFRequest4,EvalGBIFFilter2,0.673,1,No records returned using the least stringent request. No occurrence dB generated.
+aGESAx,Eurycea naufragia,Georgetown Salamander,agesax0,EvalGBIFRequest00,EvalGBIFFilter2,0.082,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aGSALx,Eurycea spelaea,Grotto Salamander,agsalx0,EvalGBIFRequest4,EvalGBIFFilter2,0.01,1,Only 6 records are returned using the least stringent request. No occurrence dB generated.
+aHELLa,Cryptobranchus alleganiensis alleganiensis,Eastern Hellbender,ahella0,EvalGBIFRequest4,EvalGBIFFilter2,0.027,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aHELLb,Cryptobranchus alleganiensis bishopi,Ozark Hellbender,ahellb0,EvalGBIFRequest4,EvalGBIFFilter2,0.029,1,Only 1 record returned using the least stringent request. No occurrence dB generated.
+aHOTOx,Anaxyrus houstonensis,Houston Toad,ahotox0,EvalGBIFRequest,EvalGBIFFilter2,0.152,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aIGSAx,Dicamptodon aterrimus,Idaho Giant Salamander,aigsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.288,1,Only 13 records are returned using the least stringent request. No occurrence dB generated.
+aILGRx,Pseudacris illinoensis,Illinois Chorus Frog,ailgrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.2,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aIMSAx,Desmognathus imitator,Imitator Salamander,aimsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.031,1,Only 15 records are returned using the least stringent request. No occurrence dB generated.
+aINSAx,Batrachoseps campi,Inyo Mountains Salamander,ainsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.227,1,Only 19 records returned using custom dated request
+aJPSAx,Eurycea tonkawae,Jollyville Plateau Salamander,ajpsax0,EvalGBIFRequest00,EvalGBIFFilter2,0.03,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aJUSAx,Eurycea junaluska,Junaluska Salamander,ajusax0,EvalGBIFRequest76,EvalGBIFFilter2,0.11,1,Only 7 records are returned using the least stringent request. No occurrence dB generated.
+aKPSAx,Batrachoseps robustus,Kern Plateau Salamander,akpsax0,EvalGBIFRequest02,EvalGBIFFilter2,0.143,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.
+aKRSSx,Batrachoseps regius,Kings River Slender Salamander,akrssx0,EvalGBIFRequest98,EvalGBIFFilter2,0.589,1,Only 14 records returned using custom dated request
+aKSSAx,Plethodon kiamichi,Kiamichi Slimy Salamander,akssax0,EvalGBIFRequest89,EvalGBIFFilter2,0.431,1,Only 6 records returned using custom dated request
+aLASAx,Plethodon kisatchie,Louisiana Slimy Salamander,alasax0,EvalGBIFRequest89,EvalGBIFFilter2,0.437,1,No records are returned using the least stringent request. No occurrence dB generated.
+aLBTRx,Smilisca fodiens,Lowland Burrowing Treefrog,albtrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.015,1,Only 6 records are returned using the least stringent request. No occurrence dB generated.
+aLLFRx,Lithobates yavapaiensis,Lowland Leopard Frog,allfrx0,EvalGBIFRequest84,EvalGBIFFilter2,0.004,1,Only 7 records returned using custom dated request
+aLSSAx,Batrachoseps minor,Lesser Slender Salamander,alssax0,EvalGBIFRequest01,EvalGBIFFilter2,0.048,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aLTASx,Eurycea longicauda,Long-tailed Salamander,altasx0,EvalGBIFRequest,EvalGBIFFilter2,0.432,1,
+aMBSAx,Ambystoma mabeei,Mabee's Salamander,ambsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.016,1,Only 19 records are returned using the least stringent request. No occurrence dB generated.
+aMWLFx,Leptodactylus fragilis,Mexican White-lipped Frog,amwlfx0,EvalGBIFRequest4,EvalGBIFFilter2,0.059,1,No records are returned using the least stringent request. No occurrence dB generated.
+aMXTRx,Smilisca baudinii,Mexican Treefrog,amxtrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.296,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.
+aNGCSx,Plethodon montanus,Northern Gray-cheeked Salamander,angcsx0,EvalGBIFRequest00,EvalGBIFFilter2,0.151,1,Only 7 records returned using custom dated request
+aNJFRx,Pseudacris kalmi,New Jersey Chorus Frog,anjfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.091,1,Only 19 records are returned using the least stringent request. No occurrence dB generated.
+aNRSAx,Plethodon electromorphus,Northern Ravine Salamander,anrsax0,EvalGBIFRequest3,EvalGBIFFilter2,0.37,1,Only 19 records are returned using the least stringent request.
+aOCSSx,Plethodon ocmulgee,Ocmulgee Slimy Salamander,aocssx0,EvalGBIFRequest89,EvalGBIFFilter2,0.034,1,Only 5 records returned using custom dated request
+aOKSAx,Eurycea tynerensis,Oklahoma Salamander,aoksax0,EvalGBIFRequest4,EvalGBIFFilter2,0.031,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.
+aOSSAx,Batrachoseps wrightorum,Oregon Slender Salamander,aossax0,EvalGBIFRequest4,EvalGBIFFilter2,0.605,1,No records are returned using the least stringent request. No occurrence dB generated.
+aOZSAx,Plethodon angusticlavius,Ozark Zigzag Salamander,aozsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.561,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.
+aPBTRx,Hyla andersonii,Pine Barrens Treefrog,apbtrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.097,1,Only 11 records are returned using the least stringent request. No occurrence dB generated.
+aPMSAx,Plethodon petraeus,Pigeon Mountain Salamander,apmsax0,EvalGBIFRequest88,EvalGBIFFilter2,0.343,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aRCSAx,Plethodon jordani,Red-cheeked Salamander,arcsax0,EvalGBIFRequest00,EvalGBIFFilter2,0.485,1,Only 5 records returned using custom dated request
+aRFSAx,Ambystoma bishopi,Reticulated Flatwoods Salamander,arfsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.08,1,No records are returned using the least stringent request. No occurrence dB generated.
+aRHSAx,Phaeognathus hubrichti,Red Hills Salamander,arhsax0,EvalGBIFRequest61,EvalGBIFFilter2,0.08,1,Only 16 records returned using custom dated request
+aRISAx,Ambystoma annulatum,Ringed Salamander,arisax0,EvalGBIFRequest4,EvalGBIFFilter2,0.578,1,Only 10 records are returned using the least stringent request. No occurrence dB generated.
+aRLFRx,Lithobates onca,Relict Leopard Frog,arlfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.008,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.
+aRSSAx,Batrachoseps relictus,Relictual Slender Salamander,arssax0,EvalGBIFRequest68,EvalGBIFFilter2,0.722,1,Only 18 records returned using custom date request
+aSADSx,Desmognathus santeetlah,Santeetlah Dusky Salamander,asadsx0,EvalGBIFRequest81,EvalGBIFFilter2,0.114,1,Only 6 records returned using custom date request
+aSASAx,Eurycea chisholmensis,Salado Salamander,asasax0,EvalGBIFRequest00,EvalGBIFFilter2,0.098,1,No records returned using custom date request. No occurrence db saved.
+aSCSAx,Plethodon asupak,Scott Bar Salamander,ascsax0,EvalGBIFRequest05,EvalGBIFFilter2,0.786,1,2 records returned using custom date request. No occurrence db saved.
+aSGTOx,Anaxyrus retiformis,Sonoran Green Toad,asgtox0,EvalGBIFRequest4,EvalGBIFFilter2,0.648,1,16 records returned using least stringent request
+aSHFRx,Hypopachus variolosus,Sheep Frog,ashfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.476,1,3 records returned using least stringent request. No occurrence db saved.
+aSHMSx,Plethodon virginia,Shenandoah Mountain Salamander,ashmsx0,EvalGBIFRequest4,EvalGBIFFilter2,0.025,1,7 records returned using least stringent request
+aSMGSx,Plethodon meridianus,South Mountain Gray-cheeked Salamander,asmgsx0,EvalGBIFRequest00,EvalGBIFFilter2,0.117,1,No records returned using custom date request. N occurrence db maintained.
+aSMSAx,Eurycea nana,San Marcos Salamander,asmsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.09,1,9 records returned using least stringent request. No occurrence db maintained.
+aSMSSx,Batrachoseps luciae,Santa Lucia Mountains Slender Salamander,asmssx0,EvalGBIFRequest01,EvalGBIFFilter2,0.273,1,19 records returned using custom date request
+aSNTOx,Ollotis alvaria,Sonoran Desert Toad,asntox0,EvalGBIFRequest4,EvalGBIFFilter2,0.326,1,No records returned using least stringent request. No occurrence db maintained.
+aSPCFx,Eleutherodactylus guttilatus,Spotted Chirping Frog,aspcfx0,EvalGBIFRequest4,EvalGBIFFilter2,0.029,1,Only 1 record returned using least stringent request. No occurrence db maintained.
+aSQSAx,Plethodon sequoyah,Sequoyah Slimy Salamander,asqsax0,EvalGBIFRequest89,EvalGBIFFilter2,0.452,1,Only 4 records returned using custom date request. No occurrence db maintained.
+aSSSSx,Batrachoseps incognitus,San Simeon Slender Salamander,assssx0,EvalGBIFRequest01,EvalGBIFFilter2,0.034,1,Only 8 records returned using custom date request. No occurrence db maintained.
+aSSYSx,Plethodon savannah,Savannah Slimy Salamander,assysx0,EvalGBIFRequest89,EvalGBIFFilter2,0.158,1,Only 6 records returned using custom date request. No occurrence db maintained.
+aSTNEx,Notophthalmus perstriatus,Striped Newt,astnex0,EvalGBIFRequest4,EvalGBIFFilter2,0.177,1,No records using least stringent request. No occurrence db maintained.
+aSTRSx,Ambystoma barbouri,Streamside Salamander,astrsx0,EvalGBIFRequest89,EvalGBIFFilter2,0.314,1,No records using least custom date request. No occurrence db maintained.
+aSYSAx,Plethodon stormi,Siskiyou Mountains Salamander,asysax0,EvalGBIFRequest65,EvalGBIFFilter2,0.802,1,16 records returned using custom date request
+aTBSAx,Eurycea rathbuni,Texas Blind Salamander,atbsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.006,1,Only 3 records returned using least stringent request. No occurrence db maintained.
+aTCSAx,Gyrinophilus palleucus,Tennessee Cave Salamander,atcsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.386,1,Only 6 records returned using least stringent request. No occurrence db maintained.
+aTESAx,Plethodon aureolus,Tellico Salamander,atesax0,EvalGBIFRequest84,EvalGBIFFilter2,0.613,1,Only 1 record returned using least stringent request. No occurrence db maintained.
+aTSSAx,Batrachoseps stebbinsi,Tehachapi Slender Salamander,atssax0,EvalGBIFRequest68,EvalGBIFFilter2,0.28,1,15 records returned using custom date request
+aVFSAx,Eurycea troglodytes,Valdina Farms Salamander,avfsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.02,1,Only 10 records returned using least stringent request. No occurrence db maintained.
+aWASAx,Aneides vagrans,Wandering Salamander,awasax0,EvalGBIFRequest3,EvalGBIFFilter2,0.595,1,Only 7 records returned using least stringent request. No occurrence db maintained.
+aWBSAx,Plethodon websteri,Webster's Salamander,awbsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.318,1,Only 9 records returned using least stringent request. No occurrence db maintained.
+aWVSSx,Gyrinophilus subterraneus,West Virginia Spring Salamander,awvssx0,EvalGBIFRequest77,EvalGBIFFilter2,0.061,1,Only 1 record returned using least stringent request. No occurrence db maintained.
+aWYTOx,Anaxyrus baxteri,Wyoming Toad,awytox0,EvalGBIFRequest68,EvalGBIFFilter2,0.086,1,Only 4 records returned using least stringent request. No occurrence db maintained.

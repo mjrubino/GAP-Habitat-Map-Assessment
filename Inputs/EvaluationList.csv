@@ -1,0 +1,285 @@
+SpeciesCode,SciName,ComName,SpeciesID,RequestID,FilterID,PropHab,HabCellValue,Notes,strOrder,strFamily,strGenus
+aABSAx,Eurycea waterlooensis,Austin Blind Salamander,aabsax0,EvalGBIFRequest01,EvalGBIFFilter,0.021,1,0 records returned using default evaluation GBIF request and filter. No occurrence dB generated. GBIF reports only 3 georeferenced occurrences and coordinate uncertainty is more than 10k.,Caudata,Plethodontidae,Eurycea
+aACSSx,Plethodon chlorobryonis,Atlantic Coast Slimy Salamander,aacssx0,EvalGBIFRequest,EvalGBIFFilter,0.166,1,,Caudata,Plethodontidae,Plethodon
+aADSAx,Desmognathus apalachicolae,Apalachicola Dusky Salamander,aadsax0,EvalGBIFRequest89,EvalGBIFFilter2,0.057,1,Hand edited added unknown CUs. Only 15 records returned using custom dated request.,Caudata,Plethodontidae,Desmognathus
+aAGTOx,Anaxyrus nelsoni,Amargosa Toad,aagtox0,EvalGBIFRequest4,EvalGBIFFilter,0.042,1,Only 14 records returned least restrictive evaluation request. No occurrence dB generated.,Anura,Bufonidae,Anaxyrus
+aAMBUx,Lithobates catesbeianus,American Bullfrog,aambux0,EvalGBIFRequest,EvalGBIFFilter,0.151,1,Over 10000 records returned. 37 points do not overlap with habitat raster.,Anura,Ranidae,Lithobates
+aAMDSx,Desmognathus ochrophaeus,Allegheny Mountain Dusky Salamander,aamdsx0,EvalGBIFRequest,EvalGBIFFilter,0.032,1,,Caudata,Plethodontidae,Desmognathus
+aAMTOx,Anaxyrus americanus,American Toad,aamtox0,EvalGBIFRequest,EvalGBIFFilter,0.267,1,,Anura,Bufonidae,Anaxyrus
+aARSAx,Aneides lugubris,Arboreal Salamander,aarsax0,EvalGBIFRequest,EvalGBIFFilter,0.094,1,,Caudata,Plethodontidae,Aneides
+aARTOx,Anaxyrus californicus,Arroyo Toad,aartox0,EvalGBIFRequest4,EvalGBIFFilter,0.19,1,Changed request stringency. Only 9 records returned using most stringent request.,Anura,Bufonidae,Anaxyrus
+aAZTOx,Anaxyrus microscaphus,Arizona Toad,aaztox0,EvalGBIFRequest,EvalGBIFFilter,0.062,1,,Anura,Bufonidae,Anaxyrus
+aAZTRx,Hyla wrightorum,Arizona Treefrog,aaztrx0,EvalGBIFRequest4,EvalGBIFFilter,0.099,1,,Anura,Hylidae,Hyla
+aBAFRx,Craugastor augusti,Barking Frog,abafrx0,EvalGBIFRequest,EvalGBIFFilter,0.012,1,,Anura,Craugastoridae,Craugastor
+aBATRx,Hyla gratiosa,Barking Treefrog,abatrx0,EvalGBIFRequest,EvalGBIFFilter,0.149,1,,Anura,Hylidae,Hyla
+aBBSSx,Batrachoseps nigriventris,Black-bellied Slender Salamander,abbssx0,EvalGBIFRequest,EvalGBIFFilter,0.356,1,,Caudata,Plethodontidae,Batrachoseps
+aBCSAx,Gyrinophilus gulolineatus,Berry Cave Salamander,abcsax0,EvalGBIFRequest65,EvalGBIFFilter,0.041,1,0 records returned least restrictive evaluation request. No occurrence dB generated.,Caudata,Plethodontidae,Gyrinophilus
+aBCTRx,Pseudacris hypochondriaca,Baja California Treefrog,abctrx0,EvalGBIFRequest,EvalGBIFFilter,0.04,1,,Anura,Hylidae,Pseudacris
+aBESAx,Desmognathus quadramaculatus,Black-bellied Salamander,abesax0,EvalGBIFRequest,EvalGBIFFilter,0.04,1,,Caudata,Plethodontidae,Desmognathus
+aBGCSx,Plethodon amplus,Blue Ridge Gray-cheeked Salamander,abgcsx0,EvalGBIFRequest00,EvalGBIFFilter,0.041,1,0 records returned least restrictive evaluation request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aBGSAx,Plethodon sherando,Big Levels Salamander,abgsax0,EvalGBIFRequest04,EvalGBIFFilter,0.429,1,0 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aBLASx,Aneides flavipunctatus,Black Salamander,ablasx0,EvalGBIFRequest,EvalGBIFFilter,0.56,1,,Caudata,Plethodontidae,Aneides
+aBLSAx,Eurycea robusta,Blanco Blind Salamander,ablsax0,EvalGBIFRequest78,EvalGBIFFilter,0.005,1,0 records with coordinates. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aBLTOx,Anaxyrus exsul,Black Toad,abltox0,EvalGBIFRequest4,EvalGBIFFilter,0.009,1,Only 9 records returned using least stringent request. No occurrence dB generated.,Anura,Bufonidae,Anaxyrus
+aBMSAx,Desmognathus welteri,Black Mountain Salamander,abmsax0,EvalGBIFRequest4,EvalGBIFFilter,0.028,1,,Caudata,Plethodontidae,Desmognathus
+aBOFRx,Pseudacris maculata,Boreal Chorus Frog,abofrx0,EvalGBIFRequest,EvalGBIFFilter,0.022,1,,Anura,Hylidae,Pseudacris
+aBOTOx,Anaxyrus boreas,Western Toad,abotox0,EvalGBIFRequest,EvalGBIFFilter,0.13,1,,Anura,Bufonidae,Anaxyrus
+aBRDSx,Desmognathus orestes,Blue Ridge Dusky Salamander,abrdsx0,EvalGBIFRequest96,EvalGBIFFilter,0.067,1,,Caudata,Plethodontidae,Desmognathus
+aBRFRx,Pseudacris brimleyi,Brimley's Chorus Frog,abrfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.131,1,,Anura,Hylidae,Pseudacris
+aBRTSx,Eurycea wilderae,Blue Ridge Two-lined Salamander,abrtsx0,EvalGBIFRequest,EvalGBIFFilter,0.099,1,,Caudata,Plethodontidae,Eurycea
+aBSNEx,Notophthalmus meridionalis,Black-spotted Newt,absnex0,EvalGBIFRequest4,EvalGBIFFilter,0.029,1,0 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Salamandridae,Notophthalmus
+aBSPSx,Eurycea sosorum,Barton Springs Salamander,abspsx0,EvalGBIFRequest93,EvalGBIFFilter,0.053,1,0 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aBTISx,Ambystoma mavortium,Barred Tiger Salamander,abtisx0,EvalGBIFRequest,EvalGBIFFilter,0.063,1,,Caudata,Ambystomatidae,Ambystoma
+aBUPSx,Ambystoma laterale,Blue-spotted Salamander,abupsx0,EvalGBIFRequest,EvalGBIFFilter,0.269,1,,Caudata,Ambystomatidae,Ambystoma
+aBUTOx,Rhinophrynus dorsalis,Burrowing Toad,abutox0,EvalGBIFRequest4,EvalGBIFFilter,0.664,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Anura,Rhinophrynidae,Rhinophrynus
+aBVTRx,Hyla avivoca,Bird-voiced Treefrog,abvtrx0,EvalGBIFRequest,EvalGBIFFilter,0.114,1,,Anura,Hylidae,Hyla
+aBWRWx,Necturus alabamensis,Black Warrior River Waterdog,abwrwx0,EvalGBIFRequest4,EvalGBIFFilter2,0.001,1,Hand edited added unknown CUs. Only 19 records are returned using the least stringent request.,Caudata,Proteidae,Necturus
+aCANEx,Rhinella marinus,Cane Toad,acanex0,EvalGBIFRequest,EvalGBIFFilter,0.015,1,!!Model output is bad!!,Anura,Bufonidae,Rhinella
+aCASAx,Dicamptodon ensatus,Calfifornia Giant Salamander,acasax0,EvalGBIFRequest,EvalGBIFFilter,0.063,1,,Caudata,Ambystomatidae,Dicamptodon
+aCATOx,Anaxyrus hemiophrys,Canadian Toad,acatox0,EvalGBIFRequest,EvalGBIFFilter,0.093,1,,Anura,Bufonidae,Anaxyrus
+aCATRx,Pseudacris cadaverina,California Treefrog,acatrx0,EvalGBIFRequest,EvalGBIFFilter,0.032,1,,Anura,Hylidae,Pseudacris
+aCBSAx,Eurycea tridentifera,Comal Blind Salamander,acbsax0,EvalGBIFRequest65,EvalGBIFFilter,0.022,1,Only 5 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aCCFRx,Eleutherodactylus marnockii,Cliff Chirping Frog,accfrx0,EvalGBIFRequest,EvalGBIFFilter,0.028,1,,Anura,Eleutherodactylidae,Eleutherodactylus
+aCCSAx,Eurycea latitans,Cascade Caverns Salamander,accsax0,EvalGBIFRequest4,EvalGBIFFilter,0.045,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aCFNEx,Taricha torosa,California Newt,acfnex0,EvalGBIFRequest,EvalGBIFFilter,0.503,1,,Caudata,Salamandridae,Taricha
+aCGSAx,Dicamptodon copei,Cope's Giant Salamander,acgsax0,EvalGBIFRequest70,EvalGBIFFilter,0.122,1,Changed request stringency.,Caudata,Ambystomatidae,Dicamptodon
+aCGTRx,Hyla chrysoscelis,Cope's Gray Treefrog,acgtrx0,EvalGBIFRequest,EvalGBIFFilter,0.306,1,,Anura,Hylidae,Hyla
+aCHDSx,Eurycea chamberlaini,Chamberlain's Dwarf Salamander,achdsx0,EvalGBIFRequest03,EvalGBIFFilter2,0.065,1,Hand edited added unknown CUs. Only 7 records returned using custom dated request,Caudata,Plethodontidae,Eurycea
+aCHSAx,Plethodon cheoah,Cheoah Bald Salamander,achsax0,EvalGBIFRequest00,EvalGBIFFilter,0.363,1,No records returned using least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aCISSx,Batrachoseps pacificus,Channel Islands Slender Salamander,acissx0,EvalGBIFRequest4,EvalGBIFFilter,0.08,1,Changed request stringency. Only 5 records returned using most stringent request.,Caudata,Plethodontidae,Batrachoseps
+aCKSAx,Plethodon punctatus,Cow Knob Salamander,acksax0,EvalGBIFRequest72,EvalGBIFFilter2,0.059,1,Hand edited added unknown CUs. Only 13 records are returned using custom dated request,Caudata,Plethodontidae,Plethodon
+aCLFRx,Lithobates chiricahuensis,Chiricahua Leopard Frog,aclfrx0,EvalGBIFRequest79,EvalGBIFFilter,0.003,1,Changed request stringency. Only 19 records returned using most stringent request.,Anura,Ranidae,Lithobates
+aCLSAx,Aneides ferreus,Clouded Salamander,aclsax0,EvalGBIFRequest4,EvalGBIFFilter,0.633,1,Changed request stringency. Only 2 records returned using most stringent request.,Caudata,Plethodontidae,Aneides
+aCMDSx,Desmognathus carolinensis,Carolina Mountain Dusky Salamander,acmdsx0,EvalGBIFRequest4,EvalGBIFFilter,0.099,1,Changed request stringency. Only 9 records returned using most stringent request.,Caudata,Plethodontidae,Desmognathus
+aCMSAx,Plethodon caddoensis,Caddo Mountain Salamander,acmsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.497,1,Hand edited added unknown CUs. Only 6 records are returned using the least stringent request. This one is strange because 100s to 1000+ records are returned prior to filtering.,Caudata,Plethodontidae,Plethodon
+aCMTSx,Plethodon nettingi,Cheat Mountain Salamander,acmtsx0,EvalGBIFRequest4,EvalGBIFFilter2,0.55,1,Hand edited added unknown CUs. Only 15 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aCOFRx,Rana luteiventris,Columbia Spotted Frog,acofrx0,EvalGBIFRequest,EvalGBIFFilter,0.017,1,,Anura,Ranidae,Rana
+aCOGSx,Dicamptodon tenebrosus,Coastal Giant Salamander,acogsx0,EvalGBIFRequest,EvalGBIFFilter,0.037,1,,Caudata,Ambystomatidae,Dicamptodon
+aCOSAx,Plethodon idahoensis,Coeur D'alene Salamander,acosax0,EvalGBIFRequest4,EvalGBIFFilter2,0.112,1,Hand edited added unknown CUs. Only 17 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aCOSPx,Scaphiopus couchii,Couch's Spadefoot,acospx0,EvalGBIFRequest,EvalGBIFFilter,0.609,1,,Anura,Scaphiopodidae,Scaphiopus
+aCPSAx,Plethodon kentucki,Cumberland Plateau Salamander,acpsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.083,1,Hand edited added unknown CUs. Only 19 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aCRFRx,Lithobates virgatipes,Carpenter Frog,acrfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.198,1,Changed request stringency.,Anura,Ranidae,Lithobates
+aCRLFx,Rana draytonii,California Red-legged Frog,acrlfx0,EvalGBIFRequest,EvalGBIFFilter,0.042,1,,Anura,Ranidae,Rana
+aCSFRx,Rana cascadae,Cascades Frog,acsfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.073,1,Changed request stringency. Only 19 records returned using most stringent request.,Anura,Ranidae,Rana
+aCSLSx,Batrachoseps attenuatus,California Slender Salamander,acslsx0,EvalGBIFRequest,EvalGBIFFilter,0.496,1,,Caudata,Plethodontidae,Batrachoseps
+aCSMSx,Plethodon chattahoochee,Chattahoochee Slimy Salamander,acsmsx0,EvalGBIFRequest89,EvalGBIFFilter,0.525,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aCTFRx,Ascaphus truei,Coastal Tailed Frog,actfrx0,EvalGBIFRequest,EvalGBIFFilter,0.27,1,,Anura,Leiopelmatidae,Ascaphus
+aCTGSx,Ambystoma californiense,California Tiger Salamander,actgsx0,EvalGBIFRequest4,EvalGBIFFilter,0.301,1,Changed request stringency. Only 17 records returned using most stringent request.,Caudata,Ambystomatidae,Ambystoma
+aCTOSx,Rhyacotriton kezeri,Columbia Torrent Salamander,actosx0,EvalGBIFRequest92,EvalGBIFFilter2,0.217,1,Added records without CUs but text info not sufficient to identify locations accurately. Only 11 records returned using custom dated request. Occurrence db removed.,Caudata,Rhyacotritonidae,Rhyacotriton
+aCTRSx,Rhyacotriton cascadae,Cascade Torrent Salamander,actrsx0,EvalGBIFRequest92,EvalGBIFFilter,0.146,1,Only 2 records returned using most stringent request. No occurrence dB generated.,Caudata,Rhyacotritonidae,Rhyacotriton
+aCUDSx,Desmognathus abditus,Cumberland Dusky Salamander,acudsx0,EvalGBIFRequest03,EvalGBIFFilter,0.056,1,0 records returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Desmognathus
+aCUTRx,Osteopilus septentrionalis,Cuban Treefrog,acutrx0,EvalGBIFRequest,EvalGBIFFilter,0.388,1,,Anura,Hylidae,Osteopilus
+aCVSAx,Eurycea lucifuga,Cave Salamander,acvsax0,EvalGBIFRequest,EvalGBIFFilter,0.463,1,,Caudata,Plethodontidae,Eurycea
+aCWFRx,Lithobates areolatus,Crawfish Frog,acwfrx0,EvalGBIFRequest,EvalGBIFFilter,0.771,1,watch this one,Anura,Ranidae,Lithobates
+aCYTRx,Hyla arenicolor,Canyon Treefrog,acytrx0,EvalGBIFRequest,EvalGBIFFilter,0.074,1,,Anura,Hylidae,Hyla
+aDASAx,Eurycea aquatica,Dark-sided Salamander,adasax0,EvalGBIFRequest,EvalGBIFFilter2,0.064,1,Hand edited added unknown CUs. Only 1 record returned using the least stringent request.,Caudata,Plethodontidae,Eurycea
+aDBBSx,Desmognathus folkertsi,Dwarf Black-bellied Salamander,adbbsx0,EvalGBIFRequest4,EvalGBIFFilter,0.022,1,!!Model output is bad!! No records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Desmognathus
+aDGFRx,Lithobates sevosus,Dusky Gopher Frog,adgfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.146,1,Only 1 record are returned using the least stringent request. No occurrence dB generated.,Anura,Ranidae,Lithobates
+aDNSAx,Plethodon elongatus,Del Norte Salamander,adnsax0,EvalGBIFRequest4,EvalGBIFFilter,0.597,1,Changed request stringency. Only 5 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aDUSAx,Plethodon dunni,Dunn's Salamander,adusax0,EvalGBIFRequest,EvalGBIFFilter,0.108,1,,Caudata,Plethodontidae,Plethodon
+aDWSAx,Eurycea quadridigitata,Dwarf Salamander,adwsax0,EvalGBIFRequest,EvalGBIFFilter,0.132,1,,Caudata,Plethodontidae,Eurycea
+aDWWAx,Necturus punctatus,Dwarf Waterdog,adwwax0,EvalGBIFRequest4,EvalGBIFFilter,0.095,1,Changed request stringency. Only 12 records returned using most stringent request.,Caudata,Proteidae,Necturus
+aEANEx,Notophthalmus viridescens,Eastern Newt,aeanex0,EvalGBIFRequest,EvalGBIFFilter,0.179,1,,Caudata,Salamandridae,Notophthalmus
+aEASPx,Scaphiopus holbrookii,Eastern Spadefoot,aeaspx0,EvalGBIFRequest,EvalGBIFFilter,0.384,1,,Anura,Scaphiopodidae,Scaphiopus
+aENMTx,Gastrophryne carolinensis,Eastern Narrow-mouthed Toad,aenmtx0,EvalGBIFRequest,EvalGBIFFilter,0.645,1,,Anura,Microhylidae,Gastrophryne
+aENSAx,Ensatina eschscholtzii,Ensatina,aensax0,EvalGBIFRequest,EvalGBIFFilter,0.43,1,,Caudata,Plethodontidae,Ensatina
+aERBSx,Plethodon cinereus,Eastern Red-backed Salamander,aerbsx0,EvalGBIFRequest,EvalGBIFFilter,0.382,1,,Caudata,Plethodontidae,Plethodon
+aETSAx,Ambystoma tigrinum,Eastern Tiger Salamander,aetsax0,EvalGBIFRequest,EvalGBIFFilter,0.088,1,,Caudata,Ambystomatidae,Ambystoma
+aFBFRx,Lithobates okaloosae,Florida Bog Frog,afbfrx0,EvalGBIFRequest85,EvalGBIFFilter,0.038,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Anura,Ranidae,Lithobates
+aFBSAx,Eurycea pterophila,Fern Bank Salamander,afbsax0,EvalGBIFRequest4,EvalGBIFFilter,0.071,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aFFSAx,Ambystoma cingulatum,Frosted Flatwoods Salamander,affsax0,EvalGBIFRequest4,EvalGBIFFilter,0.156,1,!!Model output is bad!! Only 8 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Ambystomatidae,Ambystoma
+aFMSAx,Plethodon fourchensis,Fourch Mountain Salamander,afmsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.464,1,Hand edited added unknown CUs. Only 2 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aFOTOx,Anaxyrus fowleri,Fowler's Toad,afotox0,EvalGBIFRequest,EvalGBIFFilter,0.732,1,,Anura,Bufonidae,Anaxyrus
+aFTSAx,Hemidactylium scutatum,Four-toed Salamander,aftsax0,EvalGBIFRequest,EvalGBIFFilter,0.067,1,,Caudata,Plethodontidae,Hemidactylium
+aFYLFx,Rana boylii,Foothill Yellow-legged Frog,afylfx0,EvalGBIFRequest,EvalGBIFFilter,0.077,1,,Anura,Ranidae,Rana
+aGBSAx,Haideotriton wallacei,Georgia Blind Salamander,agbsax0,EvalGBIFRequest4,EvalGBIFFilter,0.031,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Haideotriton
+aGBSPx,Spea intermontana,Great Basin Spadefoot,agbspx0,EvalGBIFRequest,EvalGBIFFilter,0.921,1,,Anura,Scaphiopodidae,Spea
+aGCTOx,Ollotis nebulifer,Gulf Coast Toad,agctox0,EvalGBIFRequest4,EvalGBIFFilter,0.673,1,No records returned using the least stringent request. No occurrence dB generated.,Anura,Bufonidae,Ollotis
+aGESAx,Eurycea naufragia,Georgetown Salamander,agesax0,EvalGBIFRequest00,EvalGBIFFilter,0.082,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aGGSAx,Batrachoseps gregarius,Gregarious Salamander,aggsax0,EvalGBIFRequest,EvalGBIFFilter,0.423,1,,Caudata,Plethodontidae,Batrachoseps
+aGHFRx,Eleutherodactylus planirostris,Greenhouse Frog,aghfrx0,EvalGBIFRequest,EvalGBIFFilter,0.569,1,,Anura,Eleutherodactylidae,Eleutherodactylus
+aGMSSx,Batrachoseps gavilanensis,Gabilan Mountains Slender Salamander,agmssx0,EvalGBIFRequest01,EvalGBIFFilter,0.546,1,,Caudata,Plethodontidae,Batrachoseps
+aGOFRx,Lithobates capito,Gopher Frog,agofrx0,EvalGBIFRequest,EvalGBIFFilter,0.072,1,,Anura,Ranidae,Lithobates
+aGPTOx,Anaxyrus cognatus,Great Plains Toad,agptox0,EvalGBIFRequest,EvalGBIFFilter,0.724,1,,Anura,Bufonidae,Anaxyrus
+aGRFRx,Lithobates clamitans,Green Frog,agrfrx0,EvalGBIFRequest,EvalGBIFFilter,0.188,1,,Anura,Ranidae,Lithobates
+aGRSAx,Aneides aeneus,Green Salamander,agrsax0,EvalGBIFRequest4,EvalGBIFFilter,0.23,1,Changed request stringency. No records returned using most stringent request.,Caudata,Plethodontidae,Aneides
+aGRSIx,Siren lacertina,Greater Siren,agrsix0,EvalGBIFRequest,EvalGBIFFilter,0.136,1,,Caudata,Sirenidae,Siren
+aGRTOx,Anaxyrus debilis,Green Toad,agrtox0,EvalGBIFRequest,EvalGBIFFilter,0.608,1,,Anura,Bufonidae,Anaxyrus
+aGRTRx,Hyla cinerea,Green Treefrog,agrtrx0,EvalGBIFRequest,EvalGBIFFilter,0.151,1,,Anura,Hylidae,Hyla
+aGSALx,Eurycea spelaea,Grotto Salamander,agsalx0,EvalGBIFRequest4,EvalGBIFFilter2,0.01,1,Hand edited added unknown CUs. Only 6 records are returned using the least stringent request.,Caudata,Plethodontidae,Eurycea
+aGSSAx,Batrachoseps major,Garden Slender Salamander,agssax0,EvalGBIFRequest,EvalGBIFFilter,0.349,1,,Caudata,Plethodontidae,Batrachoseps
+aGUWAx,Necturus beyeri,Gulf Coast Waterdog,aguwax0,EvalGBIFRequest,EvalGBIFFilter,0.03,1,,Caudata,Proteidae,Necturus
+aGYTRx,Hyla versicolor,Gray Treefrog,agytrx0,EvalGBIFRequest,EvalGBIFFilter,0.218,1,,Anura,Hylidae,Hyla
+aHELLa,Cryptobranchus alleganiensis alleganiensis,Eastern Hellbender,ahella0,EvalGBIFRequest4,EvalGBIFFilter,0.027,1,!!Model output is bad!! Only 2 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Cryptobranchidae,Cryptobranchus
+aHELLb,Cryptobranchus alleganiensis bishopi,Ozark Hellbender,ahellb0,EvalGBIFRequest4,EvalGBIFFilter,0.029,1,Only 1 record returned using the least stringent request. No occurrence dB generated.,Caudata,Cryptobranchidae,Cryptobranchus
+aHELLx,Cryptobranchus alleganiensis,Hellbender,ahellx0,EvalGBIFRequest4,EvalGBIFFilter,0.027,1,!!Model output is bad!! Only 15 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Cryptobranchidae,Cryptobranchus
+aHHSSx,Batrachoseps diabolicus,Hell Hollow Slender Salamander,ahhssx0,EvalGBIFRequest,EvalGBIFFilter,0.05,1,,Caudata,Plethodontidae,Batrachoseps
+aHOTOx,Anaxyrus houstonensis,Houston Toad,ahotox0,EvalGBIFRequest4,EvalGBIFFilter2,0.152,1,!!Model output is bad!! Hand edited added unknown CUs. Only 2 records are returned using the least stringent request. No occurrence dB generated.,Anura,Bufonidae,Anaxyrus
+aHUSPx,Scaphiopus hurterii,Hurter's Spadefoot,ahuspx0,EvalGBIFRequest,EvalGBIFFilter,0.366,1,,Anura,Scaphiopodidae,Scaphiopus
+aIGSAx,Dicamptodon aterrimus,Idaho Giant Salamander,aigsax0,EvalGBIFRequest4,EvalGBIFFilter,0.288,1,Only 13 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Ambystomatidae,Dicamptodon
+aILGRx,Pseudacris illinoensis,Illinois Chorus Frog,ailgrx0,EvalGBIFRequest4,EvalGBIFFilter,0.2,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.,Anura,Hylidae,Pseudacris
+aIMSAx,Desmognathus imitator,Imitator Salamander,aimsax0,EvalGBIFRequest85,EvalGBIFFilter2,0.031,1,Hand edited added unknown CUs. Only 15 records are returned using the least stringent request.,Caudata,Plethodontidae,Desmognathus
+aINSAx,Batrachoseps campi,Inyo Mountains Salamander,ainsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.227,1,Hand edited added unknown CUs. Only 19 records returned using custom dated request,Caudata,Plethodontidae,Batrachoseps
+aJESAx,Ambystoma jeffersonianum,Jefferson Salamander,ajesax0,EvalGBIFRequest,EvalGBIFFilter,0.05,1,,Caudata,Ambystomatidae,Ambystoma
+aJMSAx,Plethodon neomexicanus,Jemez Mountains Salamander,ajmsax0,EvalGBIFRequest4,EvalGBIFFilter,0.397,1,Changed request stringency. Only 13 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aJPSAx,Eurycea tonkawae,Jollyville Plateau Salamander,ajpsax0,EvalGBIFRequest00,EvalGBIFFilter,0.03,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aJUSAx,Eurycea junaluska,Junaluska Salamander,ajusax0,EvalGBIFRequest76,EvalGBIFFilter,0.11,1,Only 7 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aKCSSx,Batrachoseps simatus,Kern Canyon Slender Salamander,akcssx0,EvalGBIFRequest68,EvalGBIFFilter,0.752,1,Changed request stringency. Only 3 records returned using most stringent request.,Caudata,Plethodontidae,Batrachoseps
+aKPSAx,Batrachoseps robustus,Kern Plateau Salamander,akpsax0,EvalGBIFRequest02,EvalGBIFFilter,0.143,1,Only 4 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Batrachoseps
+aKRSSx,Batrachoseps regius,Kings River Slender Salamander,akrssx0,EvalGBIFRequest98,EvalGBIFFilter,0.589,1,Only 14 records returned using custom dated request,Caudata,Plethodontidae,Batrachoseps
+aKSSAx,Plethodon kiamichi,Kiamichi Slimy Salamander,akssax0,EvalGBIFRequest89,EvalGBIFFilter2,0.431,1,Hand edited added unknown CUs. Only 6 records returned using custom dated request,Caudata,Plethodontidae,Plethodon
+aLASAx,Plethodon kisatchie,Louisiana Slimy Salamander,alasax0,EvalGBIFRequest89,EvalGBIFFilter,0.437,1,No records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aLBTRx,Smilisca fodiens,Lowland Burrowing Treefrog,albtrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.015,1,Hand edited added unknown CUs. Only 11 records total after hand editing. Only 6 records are returned using the least stringent request. No occurrence dB generated.,Anura,Hylidae,Smilisca
+aLESIx,Siren intermedia,Lesser Siren,alesix0,EvalGBIFRequest,EvalGBIFFilter,0.125,1,,Caudata,Sirenidae,Siren
+aLGFRx,Pseudacris ocularis,Little Grass Frog,algfrx0,EvalGBIFRequest,EvalGBIFFilter,0.246,1,,Anura,Hylidae,Pseudacris
+aLISAx,Hydromantes brunus,Limestone Salamander,alisax0,EvalGBIFRequest4,EvalGBIFFilter,0.33,1,Changed request stringency. Only 15 records returned using most stringent request.,Caudata,Plethodontidae,Hydromantes
+aLLFRx,Lithobates yavapaiensis,Lowland Leopard Frog,allfrx0,EvalGBIFRequest84,EvalGBIFFilter2,0.004,1,Hand edited added unknown CUs. Only 7 records returned using custom dated request.,Anura,Ranidae,Lithobates
+aLMSAx,Plethodon larselli,Larch Mountain Salamander,almsax0,EvalGBIFRequest4,EvalGBIFFilter,0.292,1,Changed request stringency. Only 4 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aLSSAx,Batrachoseps minor,Lesser Slender Salamander,alssax0,EvalGBIFRequest01,EvalGBIFFilter,0.048,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Batrachoseps
+aLTASx,Eurycea longicauda,Long-tailed Salamander,altasx0,EvalGBIFRequest,EvalGBIFFilter,0.432,1,,Caudata,Plethodontidae,Eurycea
+aLTOPx,Ambystoma macrodactylum,Long-toed Salamander,altopx0,EvalGBIFRequest,EvalGBIFFilter,0.357,1,,Caudata,Ambystomatidae,Ambystoma
+aMASAx,Ambystoma opacum,Marbled Salamander,amasax0,EvalGBIFRequest,EvalGBIFFilter,0.16,1,,Caudata,Ambystomatidae,Ambystoma
+aMBSAx,Ambystoma mabeei,Mabee's Salamander,ambsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.016,1,Hand edited added unknown CUs. Only 19 records are returned using the least stringent request.,Caudata,Ambystomatidae,Ambystoma
+aMCFRx,Pseudacris brachyphona,Mountain Chorus Frog,amcfrx0,EvalGBIFRequest,EvalGBIFFilter,0.308,1,,Anura,Hylidae,Pseudacris
+aMIFRx,Lithobates septentrionalis,Mink Frog,amifrx0,EvalGBIFRequest,EvalGBIFFilter,0.151,1,,Anura,Ranidae,Lithobates
+aMLSAx,Stereochilus marginatus,Many-lined Salamander,amlsax0,EvalGBIFRequest4,EvalGBIFFilter,0.039,1,Changed request stringency. Only 4 records returned using most stringent request.,Caudata,Plethodontidae,Stereochilus
+aMLYSx,Hydromantes platycephalus,Mount Lyell Salamander,amlysx0,EvalGBIFRequest,EvalGBIFFilter,0.018,1,,Caudata,Plethodontidae,Hydromantes
+aMOSAx,Ambystoma talpoideum,Mole Salamander,amosax0,EvalGBIFRequest,EvalGBIFFilter,0.155,1,,Caudata,Ambystomatidae,Ambystoma
+aMRSAx,Eurycea multiplicata,Many-ribbed Salamander,amrsax0,EvalGBIFRequest,EvalGBIFFilter,0.018,1,,Caudata,Plethodontidae,Eurycea
+aMSSAx,Plethodon mississippi,Mississippi Slimy Salamander,amssax0,EvalGBIFRequest,EvalGBIFFilter,0.299,1,,Caudata,Plethodontidae,Plethodon
+aMUDPx,Necturus maculosus,Mudpuppy,amudpx0,EvalGBIFRequest,EvalGBIFFilter,0.026,1,,Caudata,Proteidae,Necturus
+aMUSAx,Pseudotriton montanus,Mud Salamander,amusax0,EvalGBIFRequest,EvalGBIFFilter,0.099,1,,Caudata,Plethodontidae,Pseudotriton
+aMWLFx,Leptodactylus fragilis,Mexican White-lipped Frog,amwlfx0,EvalGBIFRequest4,EvalGBIFFilter,0.059,1,No records are returned using the least stringent request. No occurrence dB generated.,Anura,Leptodactylidae,Leptodactylus
+aMXSPx,Spea multiplicata,Mexican Spadefoot,amxspx0,EvalGBIFRequest,EvalGBIFFilter,0.761,1,,Anura,Scaphiopodidae,Spea
+aMXTRx,Smilisca baudinii,Mexican Treefrog,amxtrx0,EvalGBIFRequest4,EvalGBIFFilter,0.296,1,Only 3 records are returned using the least stringent request. No occurrence dB generated.,Anura,Hylidae,Smilisca
+aNCFRx,Acris crepitans,Northern Cricket Frog,ancfrx0,EvalGBIFRequest,EvalGBIFFilter,0.058,1,,Anura,Hylidae,Acris
+aNDSAx,Desmognathus fuscus,Northern Dusky Salamander,andsax0,EvalGBIFRequest,EvalGBIFFilter,0.075,1,,Caudata,Plethodontidae,Desmognathus
+aNDSIx,Pseudobranchus striatus,Northern Dwarf Siren,andsix0,EvalGBIFRequest4,EvalGBIFFilter,0.036,1,Changed request stringency. Only 15 records returned using most stringent request.,Caudata,Sirenidae,Pseudobranchus
+aNGCSx,Plethodon montanus,Northern Gray-cheeked Salamander,angcsx0,EvalGBIFRequest00,EvalGBIFFilter2,0.151,1,Hand edited added unknown CUs. Only 7 records returned using custom dated request,Caudata,Plethodontidae,Plethodon
+aNJFRx,Pseudacris kalmi,New Jersey Chorus Frog,anjfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.091,1,Hand edited added unknown CUs. Only 19 records are returned using the least stringent request.,Anura,Hylidae,Pseudacris
+aNLFRx,Lithobates pipiens,Northern Leopard Frog,anlfrx0,EvalGBIFRequest,EvalGBIFFilter,0.02,1,,Anura,Ranidae,Lithobates
+aNOSAx,Ambystoma gracile,Northwestern Salamander,anosax0,EvalGBIFRequest,EvalGBIFFilter,0.664,1,,Caudata,Ambystomatidae,Ambystoma
+aNPTRx,Pseudacris regilla,Northern Pacific Treefrog,anptrx0,EvalGBIFRequest,EvalGBIFFilter,0.58,1,,Anura,Hylidae,Pseudacris
+aNRLFx,Rana aurora,Northern Red-legged Frog,anrlfx0,EvalGBIFRequest,EvalGBIFFilter,0.197,1,,Anura,Ranidae,Rana
+aNRSAx,Plethodon electromorphus,Northern Ravine Salamander,anrsax0,EvalGBIFRequest3,EvalGBIFFilter2,0.37,1,Hand edited added unknown CUs. Only 19 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aNRWAx,Necturus lewisi,Neuse River Waterdog,anrwax0,EvalGBIFRequest4,EvalGBIFFilter,0.027,1,Changed request stringency. Only 3 records returned using most stringent request.,Caudata,Proteidae,Necturus
+aNSSAx,Plethodon glutinosus,Northern Slimy Salamander,anssax0,EvalGBIFRequest,EvalGBIFFilter,0.401,1,,Caudata,Plethodontidae,Plethodon
+aNTLSx,Eurycea bislineata,Northern Two-lined Salamander,antlsx0,EvalGBIFRequest,EvalGBIFFilter,0.161,1,,Caudata,Plethodontidae,Eurycea
+aNZSAx,Plethodon dorsalis,Northern Zigzag Salamander,anzsax0,EvalGBIFRequest,EvalGBIFFilter,0.404,1,,Caudata,Plethodontidae,Plethodon
+aOATOx,Anaxyrus quercicus,Oak Toad,aoatox0,EvalGBIFRequest,EvalGBIFFilter,0.191,1,,Anura,Bufonidae,Anaxyrus
+aOCFRx,Pseudacris ornata,Ornate Chorus Frog,aocfrx0,EvalGBIFRequest,EvalGBIFFilter,0.165,1,,Anura,Hylidae,Pseudacris
+aOCSAx,Desmognathus ocoee,Ocoee Salamander,aocsax0,EvalGBIFRequest,EvalGBIFFilter,0.095,1,Watch this one. More than 1600 records but only 25 after filtering.,Caudata,Plethodontidae,Desmognathus
+aOCSSx,Plethodon ocmulgee,Ocmulgee Slimy Salamander,aocssx0,EvalGBIFRequest89,EvalGBIFFilter,0.034,1,Only 5 records returned using custom dated request,Caudata,Plethodontidae,Plethodon
+aODSAx,Desmognathus brimleyorum,Ouachita Dusky Salamander,aodsax0,EvalGBIFRequest,EvalGBIFFilter,0.031,1,,Caudata,Plethodontidae,Desmognathus
+aOKSAx,Eurycea tynerensis,Oklahoma Salamander,aoksax0,EvalGBIFRequest4,EvalGBIFFilter2,0.031,1,Hand edited added unknown CUs. Only 17 records total after hand editing. Only 4 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Eurycea
+aORFRx,Rana pretiosa,Oregon Spotted Frog,aorfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.068,1,!!Model output is bad!! Changed request stringency. Only 5 records returned using most stringent request.,Anura,Ranidae,Rana
+aOSSAx,Batrachoseps wrightorum,Oregon Slender Salamander,aossax0,EvalGBIFRequest4,EvalGBIFFilter,0.605,1,No records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Batrachoseps
+aOTAMx,Amphiuma pholeter,One-toed Amphiuma,aotamx0,EvalGBIFRequest64,EvalGBIFFilter,0.143,1,Changed request stringency. Only 7 records returned using most stringent request.,Caudata,Amphiumidae,Amphiuma
+aOTSAx,Rhyacotriton olympicus,Olympic Torrent Salamander,aotsax0,EvalGBIFRequest4,EvalGBIFFilter,0.121,1,Changed request stringency. Only 3 records returned using most stringent request.,Caudata,Rhyacotritonidae,Rhyacotriton
+aOZSAx,Plethodon angusticlavius,Ozark Zigzag Salamander,aozsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.561,1,Hand edited added unknown CUs. Only 4 records are returned using the least stringent request.,Caudata,Plethodontidae,Plethodon
+aPBTRx,Hyla andersonii,Pine Barrens Treefrog,apbtrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.097,1,Hand edited added unknown CUs. Only 11 records are returned using the least stringent request.,Anura,Hylidae,Hyla
+aPIFRx,Lithobates palustris,Pickerel Frog,apifrx0,EvalGBIFRequest,EvalGBIFFilter,0.111,1,,Anura,Ranidae,Lithobates
+aPIGFx,Lithobates grylio,Pig Frog,apigfx0,EvalGBIFRequest,EvalGBIFFilter,0.212,1,,Anura,Ranidae,Lithobates
+aPLFRx,Lithobates blairi,Plains Leopard Frog,aplfrx0,EvalGBIFRequest,EvalGBIFFilter,0.064,1,,Anura,Ranidae,Lithobates
+aPLSPx,Spea bombifrons,Plains Spadefoot,aplspx0,EvalGBIFRequest,EvalGBIFFilter,0.803,1,,Anura,Scaphiopodidae,Spea
+aPMSAx,Plethodon petraeus,Pigeon Mountain Salamander,apmsax0,EvalGBIFRequest88,EvalGBIFFilter,0.343,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.,Caudata,Plethodontidae,Plethodon
+aPOSAx,Plethodon hubrichti,Peaks Of Otter Salamander,aposax0,EvalGBIFRequest4,EvalGBIFFilter,0.04,1,Changed request stringency. 0 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aPWTRx,Hyla femoralis,Pine Woods Treefrog,apwtrx0,EvalGBIFRequest,EvalGBIFFilter,0.292,1,,Anura,Hylidae,Hyla
+aPYSAx,Desmognathus wrighti,Pygmy Salamander,apysax0,EvalGBIFRequest4,EvalGBIFFilter,0.104,1,Changed request stringency. Only 6 records returned using most stringent request.,Caudata,Plethodontidae,Desmognathus
+aRBNEx,Taricha rivularis,Red-bellied Newt,arbnex0,EvalGBIFRequest,EvalGBIFFilter,0.06,1,,Caudata,Salamandridae,Taricha
+aRCSAx,Plethodon jordani,Red-cheeked Salamander,arcsax0,EvalGBIFRequest00,EvalGBIFFilter,0.485,1,Only 5 records returned using custom dated request,Caudata,Plethodontidae,Plethodon
+aRESAx,Pseudotriton ruber,Red Salamander,aresax0,EvalGBIFRequest,EvalGBIFFilter,0.048,1,,Caudata,Plethodontidae,Pseudotriton
+aRFSAx,Ambystoma bishopi,Reticulated Flatwoods Salamander,arfsax0,EvalGBIFRequest4,EvalGBIFFilter,0.08,1,No records are returned using the least stringent request. No occurrence dB generated.,Caudata,Ambystomatidae,Ambystoma
+aRGCFx,Eleutherodactylus cystignathoides,Rio Grande Chirping Frog,argcfx0,EvalGBIFRequest,EvalGBIFFilter,0.087,1,,Anura,Eleutherodactylidae,Eleutherodactylus
+aRGLFx,Lithobates berlandieri,Rio Grande Leopard Frog,arglfx0,EvalGBIFRequest,EvalGBIFFilter,0.019,1,,Anura,Ranidae,Lithobates
+aRHSAx,Phaeognathus hubrichti,Red Hills Salamander,arhsax0,EvalGBIFRequest61,EvalGBIFFilter2,0.08,1,Hand edited added unknown CUs. Only 16 records returned using custom dated request,Caudata,Plethodontidae,Phaeognathus
+aRIFRx,Lithobates heckscheri,River Frog,arifrx0,EvalGBIFRequest,EvalGBIFFilter,0.112,1,,Anura,Ranidae,Lithobates
+aRISAx,Ambystoma annulatum,Ringed Salamander,arisax0,EvalGBIFRequest4,EvalGBIFFilter2,0.578,1,Hand edited added unknown CUs. Only 10 records are returned using the least stringent request.,Caudata,Ambystomatidae,Ambystoma
+aRLFRx,Lithobates onca,Relict Leopard Frog,arlfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.008,1,Only 2 records are returned using the least stringent request. No occurrence dB generated.,Anura,Ranidae,Lithobates
+aRLSAx,Plethodon shermani,Red-legged Salamander,arlsax0,EvalGBIFRequest4,EvalGBIFFilter,0.316,1,Watch this one. Over 4200 records retrieved and only 28 made it past the filters. Changed request stringency. Only 3 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aRMSAx,Plethodon ouachitae,Rich Mountain Salamander,armsax0,EvalGBIFRequest4,EvalGBIFFilter,0.432,1,Watch this one. Over 2200 records retrieved and only 20 made it past the filters. Changed request stringency. Only 3 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aROTFx,Ascaphus montanus,Rocky Mountain Tailed Frog,arotfx0,EvalGBIFRequest4,EvalGBIFFilter,0.282,1,Changed request stringency. Only 4 records returned using most stringent request.,Anura,Leiopelmatidae,Ascaphus
+aRSNEx,Taricha granulosa,Rough-skinned Newt,arsnex0,EvalGBIFRequest,EvalGBIFFilter,0.784,1,,Caudata,Salamandridae,Taricha
+aRSSAx,Batrachoseps relictus,Relictual Slender Salamander,arssax0,EvalGBIFRequest68,EvalGBIFFilter2,0.722,1,Hand edited added unknown CUs. Only 18 records returned using custom date request,Caudata,Plethodontidae,Batrachoseps
+aRSTOx,Anaxyrus punctatus,Red-spotted Toad,arstox0,EvalGBIFRequest,EvalGBIFFilter,0.609,1,,Anura,Bufonidae,Anaxyrus
+aSADSx,Desmognathus santeetlah,Santeetlah Dusky Salamander,asadsx0,EvalGBIFRequest81,EvalGBIFFilter2,0.114,1,Hand edited added unknown CUs. Only 6 records returned using custom date request,Caudata,Plethodontidae,Desmognathus
+aSASAx,Eurycea chisholmensis,Salado Salamander,asasax0,EvalGBIFRequest00,EvalGBIFFilter,0.098,1,No records returned using custom date request. No occurrence db saved.,Caudata,Plethodontidae,Eurycea
+aSCFRx,Acris gryllus,Southern Cricket Frog,ascfrx0,EvalGBIFRequest,EvalGBIFFilter,0.164,1,,Anura,Hylidae,Acris
+aSCSAx,Plethodon asupak,Scott Bar Salamander,ascsax0,EvalGBIFRequest05,EvalGBIFFilter,0.786,1,2 records returned using custom date request. No occurrence db saved.,Caudata,Plethodontidae,Plethodon
+aSCSSx,Plethodon variolatus,South Carolina Slimy Salamander,ascssx0,EvalGBIFRequest4,EvalGBIFFilter,0.092,1,Changed stringency request. Only 15 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aSDSAx,Plethodon shenandoah,Shenandoah Salamander,asdsax0,EvalGBIFRequest67,EvalGBIFFilter,0.015,1,,Caudata,Plethodontidae,Plethodon
+aSDSIx,Pseudobranchus axanthus,Southern Dwarf Siren,asdsix0,EvalGBIFRequest,EvalGBIFFilter,0.137,1,,Caudata,Sirenidae,Pseudobranchus
+aSEASx,Desmognathus monticola,Seal Salamander,aseasx0,EvalGBIFRequest,EvalGBIFFilter,0.022,1,,Caudata,Plethodontidae,Desmognathus
+aSEESx,Desmognathus aeneus,Seepage Salamander,aseesx0,EvalGBIFRequest4,EvalGBIFFilter,0.115,1,Changed stringency request. Only 5 records returned using most stringent request.,Caudata,Plethodontidae,Desmognathus
+aSENEx,Taricha sierrea,Sierra Newt,asenex0,EvalGBIFRequest,EvalGBIFFilter,0.464,1,,Caudata,Salamandridae,Taricha
+aSGCSx,Plethodon metcalfi,Southern Gray-cheeked Salamander,asgcsx0,EvalGBIFRequest4,EvalGBIFFilter,0.626,1,Changed stringency request. Only 18 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aSGSSx,Batrachoseps gabrieli,San Gabriel Mountains Slender Salamander,asgssx0,EvalGBIFRequest96,EvalGBIFFilter,0.33,1,,Caudata,Plethodontidae,Batrachoseps
+aSGTOx,Anaxyrus retiformis,Sonoran Green Toad,asgtox0,EvalGBIFRequest4,EvalGBIFFilter2,0.648,1,Hand edited added unknown CUs. 16 records returned using least stringent request,Anura,Bufonidae,Anaxyrus
+aSHFRx,Hypopachus variolosus,Sheep Frog,ashfrx0,EvalGBIFRequest4,EvalGBIFFilter2,0.476,1,Hand edited added unknown CUs. Only 15 records total after hand editing. 3 records returned using least stringent request. No occurrence db saved.,Anura,Microhylidae,Hypopachus
+aSHMSx,Plethodon virginia,Shenandoah Mountain Salamander,ashmsx0,EvalGBIFRequest3,EvalGBIFFilter2,0.025,1,!!Model output is bad and so is range!! Range and model matches P. shenandoah - Shenandoah Salamander. Hand edited added unknown CUs. Only11 records returned,Caudata,Plethodontidae,Plethodon
+aSHSAx,Hydromantes shastae,Shasta Salamander,ashsax0,EvalGBIFRequest4,EvalGBIFFilter,0.593,1,Changed stringency request. Only 5 records returned using most stringent request.,Caudata,Plethodontidae,Hydromantes
+aSITRx,Pseudacris sierra,Sierran Treefrog,asitrx0,EvalGBIFRequest,EvalGBIFFilter,0.021,1,,Anura,Hylidae,Pseudacris
+aSLFRx,Lithobates sphenocephalus,Southern Leopard Frog,aslfrx0,EvalGBIFRequest,EvalGBIFFilter,0.344,1,,Anura,Ranidae,Lithobates
+aSMFRx,Rana muscosa,Southern Mountain Yellow-legged Frog,asmfrx0,EvalGBIFRequest4,EvalGBIFFilter,0.789,1,!!Model output is bad!! Changed stringency request. Only 4 records returned using most stringent request.,Anura,Ranidae,Rana
+aSMGSx,Plethodon meridianus,South Mountain Gray-cheeked Salamander,asmgsx0,EvalGBIFRequest00,EvalGBIFFilter,0.117,1,No records returned using custom date request. N occurrence db maintained.,Caudata,Plethodontidae,Plethodon
+aSMMSx,Ambystoma texanum,Small-mouthed Salamander,asmmsx0,EvalGBIFRequest,EvalGBIFFilter,0.094,1,,Caudata,Ambystomatidae,Ambystoma
+aSMSAx,Eurycea nana,San Marcos Salamander,asmsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.09,1,Hand edited added unknown CUs. 9 records returned using least stringent request.,Caudata,Plethodontidae,Eurycea
+aSMSSx,Batrachoseps luciae,Santa Lucia Mountains Slender Salamander,asmssx0,EvalGBIFRequest01,EvalGBIFFilter2,0.273,1,Hand edited added unknown CUs. 19 records returned using custom date request,Caudata,Plethodontidae,Batrachoseps
+aSMTSx,Aneides hardii,Sacramento Mountains Salamander,asmtsx0,EvalGBIFRequest4,EvalGBIFFilter,0.068,1,Changed stringency request. Only 1 record returned using most stringent request.,Caudata,Plethodontidae,Aneides
+aSNSAx,Desmognathus marmoratus,Shovel-nosed Salamander,asnsax0,EvalGBIFRequest4,EvalGBIFFilter,0.034,1,Changed stringency request. Only 12 records returned using most stringent request.,Caudata,Plethodontidae,Desmognathus
+aSNTOx,Ollotis alvaria,Sonoran Desert Toad,asntox0,EvalGBIFRequest4,EvalGBIFFilter,0.326,1,No records returned using least stringent request. No occurrence db maintained.,Anura,Bufonidae,Ollotis
+aSOASx,Plethodon teyahalee,Southern Appalachian Salamander,asoasx0,EvalGBIFRequest4,EvalGBIFFilter,0.172,1,Changed stringency request. Only 9 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aSODSx,Desmognathus auriculatus,Southern Dusky Salamander,asodsx0,EvalGBIFRequest,EvalGBIFFilter,0.16,1,,Caudata,Plethodontidae,Desmognathus
+aSOFRx,Pseudacris nigrita,Southern Chorus Frog,asofrx0,EvalGBIFRequest,EvalGBIFFilter,0.143,1,,Anura,Hylidae,Pseudacris
+aSOTOx,Anaxyrus terrestris,Southern Toad,asotox0,EvalGBIFRequest,EvalGBIFFilter,0.27,1,,Anura,Bufonidae,Anaxyrus
+aSPCFx,Eleutherodactylus guttilatus,Spotted Chirping Frog,aspcfx0,EvalGBIFRequest4,EvalGBIFFilter,0.029,1,Only 1 record returned using least stringent request. No occurrence db maintained.,Anura,Eleutherodactylidae,Eleutherodactylus
+aSPDSx,Desmognathus conanti,Spotted Dusky Salamander,aspdsx0,EvalGBIFRequest,EvalGBIFFilter,0.089,1,,Caudata,Plethodontidae,Desmognathus
+aSPFRx,Pseudacris clarkii,Spotted Chorus Frog,aspfrx0,EvalGBIFRequest,EvalGBIFFilter,0.224,1,,Anura,Hylidae,Pseudacris
+aSPOSx,Ambystoma maculatum,Spotted Salamander,asposx0,EvalGBIFRequest,EvalGBIFFilter,0.144,1,,Caudata,Ambystomatidae,Ambystoma
+aSPPEx,Pseudacris crucifer,Spring Peeper,asppex0,EvalGBIFRequest,EvalGBIFFilter,0.247,1,,Anura,Hylidae,Pseudacris
+aSPRSx,Gyrinophilus porphyriticus,Spring Salamander,asprsx0,EvalGBIFRequest,EvalGBIFFilter,0.055,1,,Caudata,Plethodontidae,Gyrinophilus
+aSQSAx,Plethodon sequoyah,Sequoyah Slimy Salamander,asqsax0,EvalGBIFRequest89,EvalGBIFFilter,0.452,1,Only 4 records returned using custom date request. No occurrence db maintained.,Caudata,Plethodontidae,Plethodon
+aSQTRx,Hyla squirella,Squirrel Treefrog,asqtrx0,EvalGBIFRequest,EvalGBIFFilter,0.212,1,,Anura,Hylidae,Hyla
+aSRBSx,Plethodon serratus,Southern Red-backed Salamander,asrbsx0,EvalGBIFRequest,EvalGBIFFilter,0.461,1,,Caudata,Plethodontidae,Plethodon
+aSRSAx,Plethodon richmondi,Southern Ravine Salamander,asrsax0,EvalGBIFRequest,EvalGBIFFilter,0.63,1,,Caudata,Plethodontidae,Plethodon
+aSSLSx,Batrachoseps kawia,Sequoia Slender Salamander,asslsx0,EvalGBIFRequest,EvalGBIFFilter,0.346,1,,Caudata,Plethodontidae,Batrachoseps
+aSSMSx,Plethodon grobmani,Southeastern Slimy Salamander,assmsx0,EvalGBIFRequest,EvalGBIFFilter,0.134,1,,Caudata,Plethodontidae,Plethodon
+aSSSSx,Batrachoseps incognitus,San Simeon Slender Salamander,assssx0,EvalGBIFRequest01,EvalGBIFFilter,0.034,1,Only 8 records returned using custom date request. No occurrence db maintained.,Caudata,Plethodontidae,Batrachoseps
+aSSYSx,Plethodon savannah,Savannah Slimy Salamander,assysx0,EvalGBIFRequest89,EvalGBIFFilter,0.158,1,Only 6 records returned using custom date request. No occurrence db maintained.,Caudata,Plethodontidae,Plethodon
+aSTFRx,Pseudacris streckeri,Strecker's Chorus Frog,astfrx0,EvalGBIFRequest,EvalGBIFFilter,0.308,1,,Anura,Hylidae,Pseudacris
+aSTLSx,Eurycea cirrigera,Southern Two-lined Salamander,astlsx0,EvalGBIFRequest,EvalGBIFFilter,0.209,1,,Caudata,Plethodontidae,Eurycea
+aSTNEx,Notophthalmus perstriatus,Striped Newt,astnex0,EvalGBIFRequest4,EvalGBIFFilter,0.177,1,No records using least stringent request. No occurrence db maintained.,Caudata,Salamandridae,Notophthalmus
+aSTOSx,Rhyacotriton variegatus,Southern Torrent Salamander,astosx0,EvalGBIFRequest4,EvalGBIFFilter,0.243,1,Changed strigency request. Only 7 records returned using most stringent request.,Caudata,Rhyacotritonidae,Rhyacotriton
+aSTRSx,Ambystoma barbouri,Streamside Salamander,astrsx0,EvalGBIFRequest89,EvalGBIFFilter,0.314,1,No records using least custom date request. No occurrence db maintained.,Caudata,Ambystomatidae,Ambystoma
+aSYLFx,Rana sierrae,Sierra Nevada Yellow-legged Frog,asylfx0,EvalGBIFRequest4,EvalGBIFFilter,0.028,1,!!Model output is bad!! Changed strigency request. Only 12 records returned using most stringent request.,Anura,Ranidae,Rana
+aSYSAx,Plethodon stormi,Siskiyou Mountains Salamander,asysax0,EvalGBIFRequest65,EvalGBIFFilter,0.802,1,16 records returned using custom date request,Caudata,Plethodontidae,Plethodon
+aSZSAx,Plethodon ventralis,Southern Zigzag Salamander,aszsax0,EvalGBIFRequest,EvalGBIFFilter,0.357,1,,Caudata,Plethodontidae,Plethodon
+aTBSAx,Eurycea rathbuni,Texas Blind Salamander,atbsax0,EvalGBIFRequest4,EvalGBIFFilter,0.006,1,Only 3 records returned using least stringent request. No occurrence db maintained.,Caudata,Plethodontidae,Eurycea
+aTCSAx,Gyrinophilus palleucus,Tennessee Cave Salamander,atcsax0,EvalGBIFRequest4,EvalGBIFFilter,0.386,1,Only 6 records returned using least stringent request. No occurrence db maintained.,Caudata,Plethodontidae,Gyrinophilus
+aTESAx,Plethodon aureolus,Tellico Salamander,atesax0,EvalGBIFRequest84,EvalGBIFFilter,0.613,1,Only 1 record returned using least stringent request. No occurrence db maintained.,Caudata,Plethodontidae,Plethodon
+aTETOx,Anaxyrus speciosus,Texas Toad,atetox0,EvalGBIFRequest,EvalGBIFFilter,0.532,1,,Anura,Bufonidae,Anaxyrus
+aTHAMx,Amphiuma tridactylum,Three-toed Amphiuma,athamx0,EvalGBIFRequest,EvalGBIFFilter,0.154,1,,Caudata,Amphiumidae,Amphiuma
+aTLSAx,Eurycea guttolineata,Three-lined Salamander,atlsax0,EvalGBIFRequest,EvalGBIFFilter,0.136,1,,Caudata,Plethodontidae,Eurycea
+aTSSAx,Batrachoseps stebbinsi,Tehachapi Slender Salamander,atssax0,EvalGBIFRequest68,EvalGBIFFilter,0.28,1,15 records returned using custom date request,Caudata,Plethodontidae,Batrachoseps
+aTWAMx,Amphiuma means,Two-toed Amphiuma,atwamx0,EvalGBIFRequest,EvalGBIFFilter,0.103,1,,Caudata,Amphiumidae,Amphiuma
+aTXSAx,Eurycea neotenes,Texas Salamander,atxsax0,EvalGBIFRequest4,EvalGBIFFilter,0.067,1,Changed request strigency. Only 1 record returned using most stringent request.,Caudata,Plethodontidae,Eurycea
+aUCFRx,Pseudacris feriarum,Upland Chorus Frog,aucfrx0,EvalGBIFRequest,EvalGBIFFilter,0.258,1,,Anura,Hylidae,Pseudacris
+aVDSAx,Plethodon vandykei,Van Dyke's Salamander,avdsax0,EvalGBIFRequest4,EvalGBIFFilter,0.191,1,Changed request strigency. No records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aVFSAx,Eurycea troglodytes,Valdina Farms Salamander,avfsax0,EvalGBIFRequest4,EvalGBIFFilter2,0.02,1,Hand edited added unknown CUs. Only 10 records returned using least stringent request.,Caudata,Plethodontidae,Eurycea
+aVRSAx,Plethodon hoffmani,Valley And Ridge Salamander,avrsax0,EvalGBIFRequest72,EvalGBIFFilter,0.303,1,Changed request strigency. Only 15 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aWASAx,Aneides vagrans,Wandering Salamander,awasax0,EvalGBIFRequest3,EvalGBIFFilter,0.595,1,Only 7 records returned using least stringent request. No occurrence db maintained.,Caudata,Plethodontidae,Aneides
+aWBSAx,Plethodon websteri,Webster's Salamander,awbsax0,EvalGBIFRequest79,EvalGBIFFilter2,0.318,1,Hand edited added unknown CUs. Only 9 records returned using least stringent request.,Caudata,Plethodontidae,Plethodon
+aWCFRx,Pseudacris triseriata,Western Chorus Frog,awcfrx0,EvalGBIFRequest,EvalGBIFFilter,0.709,1,,Anura,Hylidae,Pseudacris
+aWESPx,Spea hammondii,Western Spadefoot,awespx0,EvalGBIFRequest,EvalGBIFFilter,0.45,1,,Anura,Scaphiopodidae,Spea
+aWHSAx,Plethodon wehrlei,Wehrle's Salamander,awhsax0,EvalGBIFRequest,EvalGBIFFilter,0.638,1,,Caudata,Plethodontidae,Plethodon
+aWLSAx,Plethodon welleri,Weller's Salamander,awlsax0,EvalGBIFRequest4,EvalGBIFFilter,0.187,1,Changed strigency request. Only 1 record returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aWNMTx,Gastrophryne olivacea,Western Narrow-mouthed Toad,awnmtx0,EvalGBIFRequest,EvalGBIFFilter,0.784,1,,Anura,Microhylidae,Gastrophryne
+aWOFRx,Lithobates sylvaticus,Wood Frog,awofrx0,EvalGBIFRequest,EvalGBIFFilter,0.223,1,,Anura,Ranidae,Lithobates
+aWOTOx,Anaxyrus woodhousii,Woodhouse's Toad,awotox0,EvalGBIFRequest,EvalGBIFFilter,0.737,1,,Anura,Bufonidae,Anaxyrus
+aWRBSx,Plethodon vehiculum,Western Red-backed Salamander,awrbsx0,EvalGBIFRequest,EvalGBIFFilter,0.607,1,,Caudata,Plethodontidae,Plethodon
+aWSSAx,Plethodon albagula,Western Slimy Salamander,awssax0,EvalGBIFRequest,EvalGBIFFilter,0.43,1,,Caudata,Plethodontidae,Plethodon
+aWSSSx,Plethodon cylindraceus,White-spotted Slimy Salamander,awsssx0,EvalGBIFRequest,EvalGBIFFilter,0.428,1,,Caudata,Plethodontidae,Plethodon
+aWVSSx,Gyrinophilus subterraneus,West Virginia Spring Salamander,awvssx0,EvalGBIFRequest77,EvalGBIFFilter,0.061,1,Only 1 record returned using least stringent request. No occurrence db maintained.,Caudata,Plethodontidae,Gyrinophilus
+aWYTOx,Anaxyrus baxteri,Wyoming Toad,awytox0,EvalGBIFRequest68,EvalGBIFFilter,0.086,1,Only 4 records returned using least stringent request. No occurrence db maintained.,Anura,Bufonidae,Anaxyrus
+aYOSAx,Plethodon yonahlossee,Yonahlossee Salamander,ayosax0,EvalGBIFRequest4,EvalGBIFFilter,0.409,1,Changed strigency request. Only 2 records returned using most stringent request.,Caudata,Plethodontidae,Plethodon
+aYOTOx,Anaxyrus canorus,Yosemite Toad,ayotox0,EvalGBIFRequest4,EvalGBIFFilter,0.202,1,Changed strigency request. Only 15 records returned using most stringent request.,Anura,Bufonidae,Anaxyrus

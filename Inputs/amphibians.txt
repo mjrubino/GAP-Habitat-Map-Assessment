@@ -1,0 +1,2 @@
+SpeciesCode,SciName,ComName
+aCGSAx,Dicamptodon copei,Cope's Giant Salamander

@@ -1,0 +1,2 @@
+SpeciesCode,SciName,ComName,SpeciesID,RequestID,FilterID,PropHab,HabCellValue,Notes,strOrder,strFamily,strGenus
+aHOTOx,Anaxyrus houstonensis,Houston Toad,ahotox0,EvalGBIFRequest4,EvalGBIFFilter2,0.152,1,Hand edited added unknown CUs. Only 2 records are returned using the least stringent request. No occurrence dB generated.,Anura,Bufonidae,Anaxyrus
